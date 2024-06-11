@@ -1,1 +1,58 @@
+:root{
+    padding: 0px;
+    margin: 0px;
+    --light:#FFEAE4 ;
+    --dark:#FF6363;
+    font-size: 14px;
+}
 
+
+/* colors */
+
+.h-bgdark{
+    background: rgb(255,135,61);
+    background: -moz-linear-gradient(189deg, rgba(255,135,61,1) 0%, rgba(150,26,0,1) 100%, rgba(139,29,26,1) 100%);
+    background: -webkit-linear-gradient(189deg, rgba(255,135,61,1) 0%, rgba(150,26,0,1) 100%, rgba(139,29,26,1) 100%);
+    background: linear-gradient(189deg, rgba(255,135,61,1) 0%, rgba(150,26,0,1) 100%, rgba(139,29,26,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff873d",endColorstr="#8b1d1a",GradientType=1);
+}
+.h-bglight{
+    background-color: var(--light);  
+  }
+  .h-text-sm{
+    font-size: 12px;
+    color: var(--light);
+    
+  }
+  .h-text-mordern{
+    font-family: monospace;
+  }
+
+  .h-lineheight{
+    line-height:0.78 ;
+  }
+  .h-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .h-text-dark{
+    color: var(--dark);
+  }
+  .h-w-fit{
+    width: fit-content;
+  }
+  .h-navlink{
+/* text-decoration: none; */
+list-style: none;
+  }
+  .h-hover-red:hover{
+    color: var(--dark);
+  }
+
+  @media only screen and (max-width: 600px) {
+    .myslider {
+      height:auto;
+    }
+  }
