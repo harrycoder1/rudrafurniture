@@ -5,8 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Harish Hedau | PortFolio',
-  description: 'This website made by me to represent my self',
+  title: 'Rudra Furniture',
+  description: '',
 }
 
 export default function RootLayout({
