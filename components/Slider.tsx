@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Contact from "./Contact";
+import SlideOffer from "./SlideOffer";
+import Intro from "./Intro";
 
 export default function Slider() {
   return (
@@ -32,7 +34,9 @@ export default function Slider() {
     </button>
   </div>
 </div>
-<div className="col-md-4 " style={{height:"500px"}}><Contact /></div></div>
+<div className="col-md-4 position-relative" style={{height:"500px"}}>
+<Intro/><SlideOffer />
+</div></div>
     </div>
   )
 }

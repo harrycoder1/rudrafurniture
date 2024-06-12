@@ -25,7 +25,7 @@ export default function Nav() {
   <button className="btn btn-secondary dropdown-toggle bg-transparent border-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">
    M
   </button>
-  <ul className="dropdown-menu ">
+  <ul className="dropdown-menu h-bg-trans" style={{background:"hsla(208, 100%, 97%, 0.39)"}}>
     <li><a className="dropdown-item" href="#">Home</a></li>
     <li><a className="dropdown-item" href="#">Catagories</a></li>
     <li><a className="dropdown-item" href="#">About Us</a></li>

@@ -4,11 +4,14 @@ import Contact from "./Contact";
 import Nav from "./Nav";
 import Slider from "./Slider";
 import Footer from "./Footer";
+
+import SlideOffer from "./SlideOffer";
 export {
     About , 
     Catagory ,
     Contact ,
     Nav ,
     Slider,
-    Footer
+    Footer,
+    SlideOffer
 }
