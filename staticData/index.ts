@@ -117,7 +117,7 @@ const furnitureCategories = [
       items: [
         { label: "Beds", img: "https://res.cloudinary.com/dsepeslgc/image/upload/v1718299635/rudraFurniture-akshay/Bedroom%20Furniture/Beds_including_headboards_and_bed_frames_cjjdkx.png" },
         // { label: "Nightstands", img: "/bedroom/nightstands.jpg" },
-        { label: "Dressers and Chests of Drawers", img: "https://res.cloudinary.com/dsepeslgc/image/upload/v1718299549/rudraFurniture-akshay/Bedroom%20Furniture/Dressers_and_Chests_of_Drawers_pbkqr3.png" },
+        { label: "Chests of Drawers", img: "https://res.cloudinary.com/dsepeslgc/image/upload/v1718299549/rudraFurniture-akshay/Bedroom%20Furniture/Dressers_and_Chests_of_Drawers_pbkqr3.png" },
         { label: "Wardrobes and Armoires", img: "https://res.cloudinary.com/dsepeslgc/image/upload/v1718299694/rudraFurniture-akshay/Bedroom%20Furniture/Wardrobes_and_Armoires_x7pl1c.png" },
         { label: "Mirrors", img: "https://res.cloudinary.com/dsepeslgc/image/upload/v1718299590/rudraFurniture-akshay/Bedroom%20Furniture/Mirrors_g7viuz.png" },
         { label: "Vanities", img: "https://res.cloudinary.com/dsepeslgc/image/upload/v1718299647/rudraFurniture-akshay/Bedroom%20Furniture/Vanities_xbyjvn.png" }
@@ -129,7 +129,7 @@ const furnitureCategories = [
         { label: "Dining Tables", img: "https://res.cloudinary.com/dsepeslgc/image/upload/v1718299600/rudraFurniture-akshay/Dining%20Room%20Furniture/Dining_Tables_tt2bhq.png" },
         { label: "Dining Chairs", img: "https://res.cloudinary.com/dsepeslgc/image/upload/v1718299542/rudraFurniture-akshay/Dining%20Room%20Furniture/2_ksbnp2.png" },
         { label: "Buffets and Sideboards", img: "https://res.cloudinary.com/dsepeslgc/image/upload/v1718299635/rudraFurniture-akshay/Dining%20Room%20Furniture/Buffets_and_Sideboards_qzoogn.png" },
-        { label: "Bar Stools and Counter Stools", img: "https://res.cloudinary.com/dsepeslgc/image/upload/v1718299671/rudraFurniture-akshay/Dining%20Room%20Furniture/Bar_Stools_and_Counter_Stools_rpdzxi.png" },
+        { label: "Bar Stools", img: "https://res.cloudinary.com/dsepeslgc/image/upload/v1718299671/rudraFurniture-akshay/Dining%20Room%20Furniture/Bar_Stools_and_Counter_Stools_rpdzxi.png" },
         { label: "China Cabinets", img: "https://res.cloudinary.com/dsepeslgc/image/upload/v1718299701/rudraFurniture-akshay/Dining%20Room%20Furniture/China_Cabinets_dyqvum.png" }
       ]
     },
@@ -149,14 +149,14 @@ const furnitureCategories = [
         { label: "Patio Chairs and Sofas", img: "https://res.cloudinary.com/dsepeslgc/image/upload/v1718299528/rudraFurniture-akshay/Outdoor%20Furniture%20%281%29/Patio_Chairs_and_Sofas_bdvh41.png" },
         { label: "Outdoor Tables", img: "https://res.cloudinary.com/dsepeslgc/image/upload/v1718299655/rudraFurniture-akshay/Outdoor%20Furniture%20%281%29/Outdoor_Tables_uxmguo.png" },
         { label: "Lounge Chairs", img: "https://res.cloudinary.com/dsepeslgc/image/upload/v1718299523/rudraFurniture-akshay/Outdoor%20Furniture%20%281%29/Lounge_Chairs_opjojx.png" },
-        { label: "Outdoor Storage (benches, boxes)", img: "https://res.cloudinary.com/dsepeslgc/image/upload/v1718299516/rudraFurniture-akshay/Outdoor%20Furniture%20%281%29/Outdoor_Storage_benches_boxes_eczzez.png" },
+        { label: "Outdoor Storage ", img: "https://res.cloudinary.com/dsepeslgc/image/upload/v1718299516/rudraFurniture-akshay/Outdoor%20Furniture%20%281%29/Outdoor_Storage_benches_boxes_eczzez.png" },
         { label: "Umbrellas and Canopies", img: "https://res.cloudinary.com/dsepeslgc/image/upload/v1718299634/rudraFurniture-akshay/Outdoor%20Furniture%20%281%29/Umbrellas_and_Canopies_opucfa.png" }
       ]
     },
     {
       category: "Kitchen Furniture",
       items: [
-        { label: "Kitchen Islands and Carts", img: "https://res.cloudinary.com/dsepeslgc/image/upload/v1718299514/rudraFurniture-akshay/Kitchen%20Furniture/Bakers_Racks_fzaxhn.png" },
+        { label: "Kitchen Islands ", img: "https://res.cloudinary.com/dsepeslgc/image/upload/v1718299514/rudraFurniture-akshay/Kitchen%20Furniture/Bakers_Racks_fzaxhn.png" },
         { label: "Bar Stools", img: "https://res.cloudinary.com/dsepeslgc/image/upload/v1718299507/rudraFurniture-akshay/Kitchen%20Furniture/Bar_Stools_w8t3yr.png" },
         { label: "Bakers Racks", img: "https://res.cloudinary.com/dsepeslgc/image/upload/v1718299514/rudraFurniture-akshay/Kitchen%20Furniture/Bakers_Racks_fzaxhn.png" }
       ]
@@ -183,8 +183,8 @@ const furnitureCategories = [
       category: "Entryway Furniture",
       items: [
         { label: "Console Tables", img: "https://res.cloudinary.com/dsepeslgc/image/upload/v1718299354/rudraFurniture-akshay/Entryway%20Furniture/Console_Tables_kzlmyg.png" },
-        { label: "Coat Racks and Hall Trees", img: "https://res.cloudinary.com/dsepeslgc/image/upload/v1718299351/rudraFurniture-akshay/Entryway%20Furniture/Coat_Racks_and_Hall_Trees_p2inv4.png" },
-        { label: "Shoe Cabinets and Benches", img: "https://res.cloudinary.com/dsepeslgc/image/upload/v1718299400/rudraFurniture-akshay/Entryway%20Furniture/Shoe_Cabinets_and_Benches_yozsf2.png" }
+        { label: "Coat Racks ", img: "https://res.cloudinary.com/dsepeslgc/image/upload/v1718299351/rudraFurniture-akshay/Entryway%20Furniture/Coat_Racks_and_Hall_Trees_p2inv4.png" },
+        { label: "Shoe Cabinets", img: "https://res.cloudinary.com/dsepeslgc/image/upload/v1718299400/rudraFurniture-akshay/Entryway%20Furniture/Shoe_Cabinets_and_Benches_yozsf2.png" }
       ]
     },
     {

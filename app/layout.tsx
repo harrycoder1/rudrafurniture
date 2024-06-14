@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Inter ,Michroma } from 'next/font/google'
 import './globals.css'
 // import '@/styles/mediaScreen.css'
-import '@/styles/contact.css'
+// import '@/styles/contact.css'd
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Nav } from '@/components';
 // const inter = Inter({ subsets: ['latin'] })

@@ -1,7 +1,7 @@
 
 export default function Contact() {
   return (
- <div  className="container  position-relative mt-5 libre "style={{height:"fit-content" }} >
+ <div  className="container  position-relative mt-5 libre " style={{height:"fit-content" ,bottom:0 , left:0 , right:0 }} >
   <img src="/bg.jpg" className="bgimg "style={{ zIndex:-1,width:"100%" ,height:"100%" , opacity:0.3}} alt="" />
     <div className="mt-3">
       <h1 className="my-4 pt-3 text-center fw-bolder libre h-heading" >Contact <span className="text-gr">US</span> </h1>
