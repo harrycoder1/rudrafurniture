@@ -210,6 +210,62 @@ const randomTime=[ 5183, 7079, 4026, 7340, 3750, 5885, 5685, 7976, 6296, 5774, 7
  
 
 ]
+
+let furnitureData1 =
+[
+  {
+    name: "Modern Sofa",
+    description: "A sleek and comfortable sofa perfect for modern living rooms.",
+    price: 899.99,
+    category: "Living Room Furniture",
+    img: "/images/sofa.jpg",
+    dimensions: {
+      width: "80 inches",
+      height: "32 inches",
+      depth: "36 inches"
+    },
+    materials: ["Fabric upholstery", "Wood frame"],
+    colors: ["Gray", "Beige", "Navy"],
+    features: ["Removable cushions", "Sturdy construction"],
+    availability: "In Stock"
+  },
+  {
+    name: "Queen Bed Frame",
+    description: "Stylish queen-size bed frame with a minimalist design.",
+    price: 1299.99,
+    category: "Bedroom Furniture",
+    img: "/images/bed.jpg",
+    dimensions: [
+      { label:"width" ,
+        value:"65 inches"
+      }
+      ,  { label:"height" ,
+        value:"48 inches"
+      },
+      { label:"depth" ,
+        value:"80 inches"
+      }
+     
+], 
+
+other:[
+  { label:"materials" ,
+    arrayData:["Solid wood"]
+  },
+  { label:"colors" ,
+    arrayData:["Walnut", "Oak"]
+  },
+  { label:"features" ,
+    arrayData:["Platform bed", "Easy assembly"]
+  },
+ 
+
+],
+
+    availability: 0
+  },
+  // Add more furniture objects as needed
+];
   const tempSlide =[
     {label:"name" ,
       link:"/img1.jpg"
