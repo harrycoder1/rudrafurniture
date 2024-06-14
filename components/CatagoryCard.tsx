@@ -63,7 +63,7 @@ const onImageChange=(e:React.MouseEvent<HTMLDivElement, MouseEvent>)=>{
  <div className='fade-in-bck  h-card-img rounded  ' onClick={onImageChange} style={{width:"100%" ,}} >
   
    {/* <Image key={i} fill src={`${d.img}`} className="  position-static rounded "   alt="..." /> */}
-  <img  src={`${d.img}`} alt="" className="  position-static rounded "  style={{width:"100%" }}/>
+  <img width={500}  src={`${d.img}`} alt="" className="  position-static rounded "  style={{width:"100%" }}/>
    
    </div>
    <div className="text-center libre mb-2" style={{color:"#686868" , fontSize:"14px"}}><span className='fw-bold' > {data.category} </span>- {d.label}</div></div>

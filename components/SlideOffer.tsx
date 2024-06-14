@@ -36,7 +36,7 @@ imgs:"/offer/img1.jpg"
     
 
 {slides.map((d,i)=> (
- currentIndex==i &&   <div className='fade-out fade-in-fwd'style={{width:"100%" , height:"180px" ,}} ><Image key={i} src={d.imgs} fill alt='' className=' position-static rounded scale-in-center'  /></div>
+ currentIndex==i &&   <div key={i} className='fade-out fade-in-fwd'style={{width:"100%" , height:"180px" ,}} ><Image key={i} src={d.imgs} fill alt='' className=' position-static rounded scale-in-center'  /></div>
 ))}
 
           </div>
