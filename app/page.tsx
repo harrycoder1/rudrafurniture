@@ -1,6 +1,6 @@
 // import { Header } from '@/components'
 // import Image from 'next/image'
-import { Catagory, Footer, SlideOffer, Slider } from "@/components"
+import { Catagory, Contact, Footer, SlideOffer, Slider } from "@/components"
 export default function Home() {
   return (
     <main className="">
@@ -9,8 +9,10 @@ export default function Home() {
 <div className="container " >
   <SlideOffer />
 <Catagory />
+<Contact />
 
 </div>
+<Footer />
 {/* <img src="https://res.cloudinary.com/dsepeslgc/image/upload/v1718299549/rudraFurniture-akshay/Bathroom%20Furniture/Medicine_Cabinets_kjdkli.png" alt="not found" /> */}
     </main>
   )

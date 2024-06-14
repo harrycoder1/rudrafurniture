@@ -2,9 +2,10 @@ import type { Metadata } from 'next'
 import { Inter ,Michroma } from 'next/font/google'
 import './globals.css'
 // import '@/styles/mediaScreen.css'
+import '@/styles/contact.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Nav } from '@/components';
-const inter = Inter({ subsets: ['latin'] })
+// const inter = Inter({ subsets: ['latin'] })
 const michroma = Michroma({weight:'400'  ,subsets:['latin', 'latin-ext' ] })
 
 export const metadata: Metadata = {

@@ -35,7 +35,7 @@ useEffect(() => {
 
   const setRandomInterval = () => {
 
-    const randomTime=[7986, 6199, 7695, 6984, 5358, 6734, 7131, 6078, 9880, 7344, 6394, 7364, 6135, 5885, 8814, 7419, 5567, 9190, 8872, 8145, 7120, 6048, 7568, 6647, 5897, 7657, 9348, 9348, 9021, 9334, 7171, 6036, 7709, 6198, 8579, 6686, 8912, 5756, 6946, 5859]
+    const randomTime=[ 14717, 17884, 15757, 13140, 19941, 18027, 18648, 13861, 13630, 13218, 18982, 15634, 16034, 16064, 16810, 17845, 19181, 16524, 13204, 18359, 18015, 19865, 17153, 17846, 15819, 13098, 17131, 18507, 14707, 19429, 16242, 16124, 18035, 17372, 13996, 17147, 15266, 13529, 14625, 14057 ]
     const randomIndex = Math.floor(Math.random() * randomTime.length);
     const randomTime1 = randomTime[randomIndex] // Random time between 1000ms and 6000ms (1-6 seconds)
     interval = setInterval(() => {
@@ -66,7 +66,7 @@ const onImageChange=(e:React.MouseEvent<HTMLDivElement, MouseEvent>)=>{
   <img width={500}  src={`${d.img}`} alt="" className="  position-static rounded "  style={{width:"100%" }}/>
    
    </div>
-   <div className="text-center libre mb-2" style={{color:"#686868" , fontSize:"14px"}}><span className='fw-bold' > {data.category} </span>- {d.label}</div></div>
+   <div className="text-center libre mb-2" style={{color:"#686868" , fontSize:"18px"}}><span className='fw-bold' > {data.category} </span>- {d.label}</div></div>
 ))
 
 }    

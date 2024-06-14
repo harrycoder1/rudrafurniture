@@ -7,6 +7,37 @@
     font-size: 14px;
     
 }
+.h-green-glass{
+  /* From https://css.glass */
+background: #4b92002f;
+/* border-radius: 16px; */
+/* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+backdrop-filter: blur(10.5px);
+-webkit-backdrop-filter: blur(10.5px);
+/* border: 1px solid rgba(76, 146, 0, 0.3); */
+}
+.h-btn:hover{
+  background: #8fff1885;
+/* border-radius: 16px; */
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10.5px);
+-webkit-backdrop-filter: blur(10.5px);
+border: 1px solid rgba(76, 146, 0, 0.3);
+color: green;
+}
+.h-btn{
+  width: 140px;
+    padding: 12px 8px;
+    border-radius: 10px;
+    border: 0;
+    font-size: 14px;
+    box-shadow: 1px 1px 2px 0px black;
+}
+.h-heading{
+font-size: 44px;
+
+}
+
 
 /* @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap'); */
 .michroma {
@@ -41,7 +72,13 @@ background: linear-gradient(to top, #FF975C 0%, #F72103 100%);
 }
 
 /* colors */
-
+.bgimg{
+  position:absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
 .h-bgdark{
     background: rgb(255,135,61);
     background: -moz-linear-gradient(189deg, rgba(255,135,61,1) 0%, rgba(150,26,0,1) 100%, rgba(139,29,26,1) 100%);
@@ -88,12 +125,18 @@ list-style: none;
     .myslider {
       height:auto;
     }
+    /* .h-heading{
+      font-size: 32px;
+    } */
     /* .h-card-img{
       width: 500px;
     } */
      .hres{
       height: 100vw;
       margin-top: 40px;
+     }
+     .h-heading{
+      font-size: 32px;
      }
     body{
       /* background-color: #000; */
@@ -104,6 +147,9 @@ list-style: none;
     .myslider {
       width: 100%;
       height:100vh;
+    }
+    .h-heading{
+      font-size: 44px;
     }
     /* .h-card-img{
       width: 500px;
@@ -126,6 +172,7 @@ list-style: none;
     margin: 0;
     box-sizing: border-box;
 }
+
 .slowFade {
     display: flex;
     align-items: flex-start;
@@ -528,4 +575,30 @@ flex-wrap: wrap;
     -webkit-transform-origin: top;
             transform-origin: top;
   }
+}
+
+
+.h-form-input{
+  min-width: 300px;
+    padding: 12px 42px;
+    font-size: 14px;
+    border-radius: 9px;
+    border: none;
+    /* border-bottom: 2px solid orange; */
+    /* background: #8080801a; */
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.23);
+border-radius: 8px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(9.9px);
+-webkit-backdrop-filter: blur(9.9px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+    text-align: center;
+    margin: 12px 0px;
+}
+.h-form-input:focus-visible{
+  outline: none;
+  /* height: ; */
+  border:none ;
+  box-shadow: 1px 1px 6px 0px rgb(55, 55, 55);
 }
