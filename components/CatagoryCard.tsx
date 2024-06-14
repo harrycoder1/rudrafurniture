@@ -67,7 +67,7 @@ const onImageChange=(e:React.MouseEvent<HTMLDivElement, MouseEvent>)=>{
   <img width={500}  src={`${d.img}`} alt="" className="  position-static rounded "  style={{width:"100%" }}/>
    
    </div>
-   <div className="text-center libre mb-2" style={{color:"#686868" , fontSize:"18px"}}><span className='fw-bold' > {data.category} </span>- {d.label}</div></div> 
+   <div className="text-center libre mb-2" style={{color:"#686868" , fontSize:"14px"}}><span className='fw-bold' > {data.category} </span>- {d.label}</div></div> 
    
    
 
