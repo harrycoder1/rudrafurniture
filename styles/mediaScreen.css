@@ -1,0 +1,42 @@
+Slider.module.css
+
+/* Default background color */
+body {
+    background-color: #fd5f5f; /* Default color */
+  }
+  
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: #da414e; /* Light red */
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) and (max-width: 768px) {
+    body {
+      background-color: #d1ecf1; /* Light blue */
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+      background-color: #d4edda; /* Light green */
+    }
+  }
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+      background-color: #fff3cd; /* Light yellow */
+    }
+  }
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    body {
+      background-color: #e2e3e5; /* Light grey */
+    }
+  }
+  
