@@ -30,18 +30,13 @@ imgs:"/offer/img1.jpg"
           }
   
 ]
+
 useEffect(() => {
   let interval :any;
 
   const setRandomInterval = () => {
 
-    const randomTime=[
-      8531, 10145, 11228, 9276, 6901, 7056, 10949, 7111, 11765, 11562,
-      8497, 9732, 11856, 10321, 7421, 8748, 5384, 5953, 11795, 8210,
-      5783, 10367, 7481, 11196, 10884, 11484, 6447, 10040, 10653, 8911,
-      9420, 10397, 7176, 11220, 10744, 5145, 9071, 11682, 11630, 7033,
-      6778, 5896, 5277, 7875, 10467, 7154, 7582, 11791, 9564, 11839
-    ]
+    const randomTime=[ 14717, 17884, 15757, 13140, 19941, 18027, 18648, 13861, 13630, 13218, 18982, 15634, 16034, 16064, 16810, 17845, 19181, 16524, 13204, 18359, 18015, 19865, 17153, 17846, 15819, 13098, 17131, 18507, 14707, 19429, 16242, 16124, 18035, 17372, 13996, 17147, 15266, 13529, 14625, 14057 ]
     const randomIndex = Math.floor(Math.random() * randomTime.length);
     const randomTime1 = randomTime[randomIndex] // Random time between 1000ms and 6000ms (1-6 seconds)
     interval = setInterval(() => {
@@ -61,14 +56,14 @@ const onImageChange=(e:React.MouseEvent<HTMLDivElement, MouseEvent>)=>{
   setCurrentIndex(prevIndex => (prevIndex + 1) % dt.length)
 }
   return (
-    <div className='h-card h-flex'style={{flexDirection:"column"}}>
+    <div className=' 'style={{flexDirection:"column"}}>
         <div className=" ">
-        {data.items.map((d,i)=> (
+        {/* {data.items.map((d,i)=> (
  currentIndex==i &&
  <div className="" key={i}>
- <div className=' fade-out fade-in-fwd rounded position-relative  ' onClick={onImageChange} style={{width:"100%" ,}} >
+ <div className=' fade-out fade-in-fwd h-card-img rounded position-relative  ' onClick={onImageChange} style={{width:"100%" ,}} >
    
-  <img width={500}  src={`${d.img}`} alt="" className="  h-card-img position-static rounded "  style={{width:"100%" }}/>
+  <img width={500}  src={`${d.img}`} alt="" className="  position-static rounded "  style={{width:"100%" }}/>
    
    </div>
    <div className="text-center libre mb-2 h-cat-text" style={{color:"#686868" }}><span className='fw-bold' > {data.category} </span>- {d.label}</div></div> 
@@ -80,8 +75,18 @@ const onImageChange=(e:React.MouseEvent<HTMLDivElement, MouseEvent>)=>{
 
 ))
 
-}    
-    
+}     */}
+
+    <div className="slider">
+        <div className="slides">
+            <div className="slide"><img src="img1.jpg" alt="Image 1" /></div>
+            <div className="slide"><img src="img2.jpg" alt="Image 2"/></div>
+            <div className="slide"><img src="img3.jpg" alt="Image 3"/></div>
+            {/* <div className="slide"><img src="image4.jpg" alt="Image 4"/></div> */}
+        </div>
+    </div>
+
+
         </div>
        
     </div>
