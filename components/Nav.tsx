@@ -31,9 +31,9 @@ export default function Nav() {
               <li className="my-2 outline-none border-0 michroma text-gr  " style={{cursor:"pointer"}} data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"  >Catagories</li>
               <Link className="my-2 michroma text-gr  "  href={'/about'}>About</Link>
               </ul>
-              <form className="d-flex  mt-3" role="search">
-                <input className="form-control me-2  h-text-sm " type="search" placeholder="type here..."style={{fontSize:"12px"}} aria-label="Search" />
-                <button className="btn btn-outline-warning" style={{fontSize:"12px"}}  type="submit">Search</button>
+              <form className="h-flex  mt-3" role="search">
+              <input className="text-dark me-2  h-text-sm h-form-input  " type="search" placeholder="type here..."style={{fontSize:"12px" ,width:"200px"}} aria-label="Search" />
+              <button className="h-btn" style={{fontSize:"12px" }}  type="submit">Search</button>
               </form>
             </div>
           </div>
@@ -54,9 +54,9 @@ export default function Nav() {
 
             </div>
             <div className="">
-            <form className="d-flex " role="search">
-                <input className="form-control me-2  h-text-sm " type="search" placeholder="type here..."style={{fontSize:"12px"}} aria-label="Search" />
-                <button className="btn btn-outline-warning" style={{fontSize:"12px"}}  type="submit">Search</button>
+            <form className="h-flex " role="search">
+            <input className="text-dark me-2  h-text-sm h-form-input  " type="search" placeholder="type here..."style={{fontSize:"12px" ,width:"200px"}} aria-label="Search" />
+            <button className="h-btn" style={{fontSize:"12px" }}  type="submit">Search</button>
               </form>
             </div>
             </div>

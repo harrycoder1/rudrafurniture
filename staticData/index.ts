@@ -222,11 +222,55 @@ const randomTime=[ 5183, 7079, 4026, 7340, 3750, 5885, 5685, 7976, 6296, 5774, 7
     }
   ]
 
+
+  const faq = [
+    {
+      question: "What is Rudra Furniture?",
+      answer: "Rudra Furniture is a premier furniture showcasing website where you can explore a wide range of furniture collections for various parts of your home. We provide detailed information and price ranges for each piece of furniture."
+    },
+    {
+      question: "Can I purchase furniture directly from the website?",
+      answer: "No, Rudra Furniture does not support online purchases. Our website is designed to help you browse our furniture collections and understand the price ranges."
+    },
+    {
+      question: "How can I purchase furniture from Rudra Furniture?",
+      answer: "To purchase furniture, please contact us through our contact number, email, or the contact form available on our website. Our team will assist you with the purchase process."
+    },
+    {
+      question: "Where can I find the contact details for Rudra Furniture?",
+      answer: "Our contact details are available on the 'Contact Us' page of our website. You can reach us via phone, email, or by filling out the contact form."
+    },
+    {
+      question: "What types of furniture do you offer?",
+      answer: "Rudra Furniture offers a wide range of furniture, including living room furniture, bedroom furniture, dining room furniture, office furniture, outdoor furniture, kitchen furniture, bathroom furniture, kids' furniture, entryway furniture, and storage furniture."
+    },
+    {
+      question: "Are the prices listed on the website final?",
+      answer: "The prices listed on our website are indicative and may vary. For the final price and more details, please get in touch with our team."
+    },
+  
+    {
+      question: "Do you offer customization options?",
+      answer: "Yes, we offer customization options for certain furniture pieces. Please contact us to discuss your specific requirements."
+    },
+    {
+      question: "How can I stay updated on new arrivals and offers?",
+      answer: "To stay updated on new arrivals and special offers, you can follow us on our social media channels or subscribe to our newsletter."
+    },
+    {
+      question: "What should I do if I have more questions?",
+      answer: "If you have any additional questions, please do not hesitate to contact us through our contact number, email, or the contact form on our website. Our team is here to help!"
+    }
+  ];
+  
+  // console.log(faq);
+  
   export{
     furnitureCategories,
     navlinks,
     tempSlide ,
     furnitureData,
-    randomTime
+    randomTime ,
+    faq
   }
   

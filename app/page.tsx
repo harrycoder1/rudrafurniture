@@ -1,6 +1,6 @@
 // import { Header } from '@/components'
 // import Image from 'next/image'
-import { Catagory, Contact, Footer, SlideOffer, Slider } from "@/components"
+import { Catagory, Contact, FAQ, Footer, SlideOffer, Slider } from "@/components"
 export default function Home() {
   return (
     <main className="">
@@ -10,6 +10,7 @@ export default function Home() {
   <SlideOffer />
 <Catagory />
 <Contact />
+<FAQ />
 
 </div>
 <Footer />
