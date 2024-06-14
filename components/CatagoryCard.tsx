@@ -59,7 +59,7 @@ const onImageChange=(e:React.MouseEvent<HTMLDivElement, MouseEvent>)=>{
         <div className=" ">
         {data.items.map((d,i)=> (
  currentIndex==i &&   
- <div className="">
+ <div className="" key={i}>
  <div className='fade-in-bck  h-card-img rounded  ' onClick={onImageChange} style={{width:"100%" ,}} >
   
    {/* <Image key={i} fill src={`${d.img}`} className="  position-static rounded "   alt="..." /> */}
