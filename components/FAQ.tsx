@@ -29,7 +29,7 @@ export default function FAQ() {
 
                 
 {faq.map((d,i) =>(
-    <div className="accordion-item bg-transparent border-top border-bottom py-3">
+    <div key={i} className="accordion-item bg-transparent border-top border-bottom py-3">
     <h2 className="accordion-header" id={`faqAccountHeading`+i}>
       <button className="accordion-button collapsed bg-transparent fw-bold shadow-none text-gr" type="button" data-bs-toggle="collapse" data-bs-target={`#faqAccountCollapse`+i} aria-expanded="false" aria-controls={`faqAccountCollapse`+i} style={{fontSize:"16px"}}>
         {d.question}
