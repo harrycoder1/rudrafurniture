@@ -61,13 +61,11 @@ const onImageChange=(e:React.MouseEvent<HTMLDivElement, MouseEvent>)=>{
  currentIndex==i &&
  <div className="" key={i}>
  <div className=' fade-out fade-in-fwd h-card-img rounded position-relative  ' onClick={onImageChange} style={{width:"100%" ,}} >
- {/* <img width={500}  src={`bg.jpg`} alt="" className="  position-static rounded "  style={{width:"100%" }}/> */}
-  
-   {/* <Image key={i} fill src={`${d.img}`} className="  position-static rounded "   alt="..." /> */}
+   
   <img width={500}  src={`${d.img}`} alt="" className="  position-static rounded "  style={{width:"100%" }}/>
    
    </div>
-   <div className="text-center libre mb-2" style={{color:"#686868" , fontSize:"14px"}}><span className='fw-bold' > {data.category} </span>- {d.label}</div></div> 
+   <div className="text-center libre mb-2 h-cat-text" style={{color:"#686868" }}><span className='fw-bold' > {data.category} </span>- {d.label}</div></div> 
    
    
 

@@ -143,7 +143,12 @@ list-style: none;
      }
   
   }
-
+@media only screen and (max-width:400px) {
+  .h-card{
+    height: 100vw;
+  }
+  
+}
   @media only screen and (min-width: 400px) {
     .myslider {
       width: 100%;
