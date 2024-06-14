@@ -6,21 +6,21 @@ import Intro from "./Intro";
 export default function Slider() {
   return (
     <div>
-<div className="" style={{height:"100vh"}}>
+<div className="" >
 
 <div className="myslider " >
-<div id="carouselExampleControls" className="carousel slide w-100 h-100"  data-bs-ride="carousel">
+<div id="carouselExampleControls" className="carousel slide w-100 h-100  hres"  data-bs-ride="carousel">
     <div className="carousel-inner" style={{width:"100%"}}>
-      <div className="carousel-item active h-flex " style={{height:"100vh" }}>
-        <Image fill src="/img1.jpg" className="d-block w-100  "  style={{width:"100%" }}alt="..." />
+      <div className="carousel-item active h-flex hres "  >
+        <Image fill src="/img1.jpg" className="d-block w-100   "  style={{width:"100%" ,  }}alt="..." />
         {/* <img  /> */}
       </div>
-      <div className="carousel-item" style={{height:"100vh" }}>
+      <div className="carousel-item  hres"  >
       <Image  fill src="/img2.jpg" className="d-block w-100  "  style={{width:"100%"  }}alt="..." />
 
       </div>
-      <div className="carousel-item" style={{height:"100vh" }}>
-      <Image  fill src="/img3.jpg" className="d-block w-100  "  style={{width:"100%"  }}alt="..." />
+      <div className="carousel-item hres "  >
+      <Image  fill src="/img3.jpg" className="d-block w-100   "  style={{width:"100%"  }}alt="..." />
 
       </div>
     </div>
