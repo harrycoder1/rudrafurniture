@@ -653,6 +653,29 @@ backdrop-filter: blur(9.9px);
     text-align: center;
     margin: 12px 0px;
 }
+.h-form-input-s{
+  padding: 12px 42px;
+  font-size: 14px;
+  border-radius: 9px;
+  border: none;
+  /* border-bottom: 2px solid orange; */
+  /* background: #8080801a; */
+  /* From https://css.glass */
+background: rgba(255, 255, 255, 0.23);
+border-radius: 8px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(9.9px);
+-webkit-backdrop-filter: blur(9.9px);
+/* border: 1px solid rgba(255, 255, 255, 0.3); */
+  text-align: center;
+  margin: 12px 0px;
+}
+.h-form-input-s:hover{
+  outline: none;
+  /* height: ; */
+  border:none ;
+  box-shadow: 0 4px 30px rgba(157, 157, 157, 0.699);
+}
 .h-form-input:focus-visible{
   outline: none;
   /* height: ; */
