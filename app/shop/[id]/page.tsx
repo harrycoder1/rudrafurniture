@@ -104,7 +104,7 @@ export default function ProductByID({ params }: { params: { id: string } }) {
     </div> 
     : <div className="w-100 h-flex" style={{marginTop:"72px" ,height:"80vh" , alignItems:"center"}} >
       
-<Image src={'/loading.svg'} width={60} height={60} className='100px]' alt='loading...' />
+<img src={'/loading.svg'} width={60} height={60} className='100px]' alt='loading...' />
       <div className="text-danger"> Loading...</div>
       
       </div>}
