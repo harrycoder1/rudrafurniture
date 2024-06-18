@@ -72,7 +72,7 @@ const furnitureCategories = [
       ]
     },
     {
-      category: "Kids' Furniture",
+      category: "Kid's Furniture",
       items: [
         "Cribs and Changing Tables",
         "Kids' Beds and Bunk Beds",
@@ -171,7 +171,7 @@ const furnitureCategories = [
       ]
     },
     {
-      category: "Kids' Furniture",
+      category: "Kid's Furniture",
       items: [
         { label: "Cribs and Changing Tables", img: "https://res.cloudinary.com/dsepeslgc/image/upload/v1718299400/rudraFurniture-akshay/Kids%27%20Furniture/Cribs_and_Changing_Tables_fz2g6e.png" },
         { label: "Kids' Beds and Bunk Beds", img: "https://res.cloudinary.com/dsepeslgc/image/upload/v1718299422/rudraFurniture-akshay/Kids%27%20Furniture/Kids_Beds_and_Bunk_Beds_2_yfsahs.png" },

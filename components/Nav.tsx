@@ -64,6 +64,7 @@ export default function Nav() {
             <div className="">
 
               <Link className="mx-3 michroma text-gr  "   href={'/'}>Home</Link>
+              <Link className="mx-3 michroma text-gr  "   href={'/shop'}>Shope</Link>
               <button className="mx-3 outline-none border-0 michroma text-gr  " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"  >Catagories</button>
               <Link className="mx-3 michroma text-gr  "  href={'/about'}>About</Link>
             </div>
