@@ -321,12 +321,216 @@ other:[
   
   // console.log(faq);
   
+
+const apiDataStatic =[{
+  "name": "Bathroom Shelving",
+  "img": ["https://res.cloudinary.com/dgbd31kjz/image/upload/v1718443117/24_ejue77.jpg"],
+  "description":
+    "Modern look with extra space shelving",
+  "price": 42999 ,
+  "category": "Bathroom Furniture",
+  
+  "dimensions": [
+    { "label": "width", "value": "72 inches" },
+    { "label": "height", "value": "72 inches" },
+    { "label": "depth", "value": "15 inches" }
+  ],
+  "other": [
+    { "label": "materials", "value": "plywood & color mica" },
+    { "label": "colors", "value": "walnut & white" },
+    {
+      "label": "features",
+      "Value": "extra stoge & suitable colour combination"
+    }
+  ],
+  "availability": 1
+},{
+  "name": "Modern Bathroom Shelving",
+  "img": ["https://res.cloudinary.com/dgbd31kjz/image/upload/v1718443114/23_i1f8yq.jpg"],
+  "description":
+    "amazing design with suitable to your home",
+  "price": 14999 ,
+  "category": "Bathroom Furniture",
+  
+  "dimensions": [
+    { "label": "width", "value": "48 inches" },
+    { "label": "height", "value": "24 inches" },
+    { "label": "depth", "value": "15 inches" }
+  ],
+  "other": [
+    { "label": "materials", "value": "plywood color mica" },
+    { "label": "colors", "value": "Oak" },
+    {
+      "label": "features",
+      "Value": "Openable drawers"
+    }
+  ],
+  "availability": 1
+},{
+  "name": "Linen Towers and cabinates",
+  "img": ["https://res.cloudinary.com/dgbd31kjz/image/upload/v1718443114/21_wile1r.jpg"],
+  "description":
+    "all storage units for towels and linens with multiple shelves or drawers, crafted from wood or metal.",
+  "price": 32999 ,
+  "category": "BedRoom Furniture",
+  
+  "dimensions": [
+    { "label": "width", "value": "54 inches" },
+    { "label": "height", "value": "72 inches" },
+    { "label": "depth", "value": "12 inches" }
+  ],
+  "other": [
+    { "label": "materials", "value": "plywood color mica" },
+    { "label": "colors", "value": "walnut" },
+    {
+      "label": "features",
+      "Value": "Openable doors with huge open space"
+    }
+  ],
+  "availability": 1
+},{
+  "name": "Cabinates ",
+  "img": ["https://res.cloudinary.com/dgbd31kjz/image/upload/v1718443114/22_ipyb4d.jpg"],
+  "description":
+    " drawers, crafted from plywood or metal.",
+  "price": 15999 ,
+  "category": "BedRoom Furniture",
+  
+  "dimensions": [
+    { "label": "width", "value": "42 inches" },
+    { "label": "height", "value": "30 inches" },
+    { "label": "depth", "value": "16 inches" }
+  ],
+  "other": [
+    { "label": "materials", "value": "plywood color mica" },
+    { "label": "colors", "value": "Walnut" },
+    {
+      "label": "features",
+      "Value": "Openable drawers with huge space"
+    }
+  ],
+  "availability": 1
+},{
+  "name": "Towel Cabinate",
+  "img": ["https://res.cloudinary.com/dgbd31kjz/image/upload/v1718443113/19_ao0bnc.jpg"],
+  "description":
+    "small size storage with open door",
+  "price": 1999 ,
+  "category": "Bathroom Furniture",
+  
+  "dimensions": [
+    { "label": "width", "value": "24 inches" },
+    { "label": "height", "value": "36 inches" },
+    { "label": "depth", "value": "12 inches" }
+  ],
+  "other": [
+    { "label": "materials", "value": "plywood color mica" },
+    { "label": "colors", "value": "Oak with wooden texture " },
+    {
+      "label": "features",
+      "Value": "simple design with extra storage"
+    }
+  ],
+  "availability": 1
+},{
+  "name": " Linen tower with medicine cabinate  ",
+  "img": ["https://res.cloudinary.com/dgbd31kjz/image/upload/v1718443113/20_io6gqx.jpg"],
+  "description":
+    "A Modern design with Integrated Storage spaces.",
+  "price": 32999 ,
+  "category": "Bathroom Furniture",
+  
+  "dimensions": [
+    { "label": "width", "value": "54 inches" },
+    { "label": "height", "value": "72 inches" },
+    { "label": "depth", "value": "15 inches" }
+  ],
+  "other": [
+    { "label": "materials", "value": "plywood color mica" },
+    { "label": "colors", "value": "Oak with wooden texture white" },
+    {
+      "label": "features",
+      "Value": "Openable doors with huge space"
+    }
+  ],
+  "availability": 1
+},{
+  "name": "Vanity units",
+  "img": ["https://res.cloudinary.com/dgbd31kjz/image/upload/v1718443113/18_f00olw.jpg"],
+  "description":
+    "Bathroom centerpieces combining sinks with storage, .",
+  "price": 8999 ,
+  "category": "Bathroom Furniture",
+  
+  "dimensions": [
+    { "label": "width", "value": "30 inches" },
+    { "label": "height", "value": "36 inches" },
+    { "label": "depth", "value": "12 inches" }
+  ],
+  "other": [
+    { "label": "materials", "value": "plywood color mica" },
+    { "label": "colors", "value": "Oak" },
+    {
+      "label": "features",
+      "Value": "Open storage with three drawers"
+    }
+  ],
+  "availability": 1
+},{
+  "name": "latest Vanity Cabinate",
+  "img": ["https://res.cloudinary.com/dgbd31kjz/image/upload/v1718443113/17_uzqhqp.jpg"],
+  "description":
+    "mirror side open storage with sink drawers",
+  "price": 32999 ,
+  "category": "Bathroom Furniture",
+  
+  "dimensions": [
+    { "label": "width", "value": "54 inches" },
+    { "label": "height", "value": "72 inches" },
+    { "label": "depth", "value": "15 inches" }
+  ],
+  "other": [
+    { "label": "materials", "value": "plywood color mica" },
+    { "label": "colors", "value": "Walnut" },
+    {
+      "label": "features",
+      "Value": "Openable drawers and huge open space"
+    }
+  ],
+  "availability": 1
+},{
+  "name": "Vanity units with side linen tower",
+  "img": ["https://res.cloudinary.com/dgbd31kjz/image/upload/v1718443113/16_mfweew.jpg"],
+  "description":
+    "amazing design with extra space and modern look.",
+  "price": 35999 ,
+  "category": "Bathroom Furniture",
+  
+  "dimensions": [
+    { "label": "width", "value": "60 inches" },
+    { "label": "height", "value": "72 inches" },
+    { "label": "th", "value": "16 inches" }
+  ],
+  "other": [
+    { "label": "materials", "value": "plywood color mica" },
+    { "label": "colors", "value": "Oak with wooden texture white" },
+    {
+      "label": "features",
+      "Value": "huge space with drawers & beautiful appearence"
+    }
+  ],
+  "availability": 1
+}
+]
+
   export{
     furnitureCategories,
     navlinks,
     tempSlide ,
     furnitureData,
     randomTime ,
-    faq
+    faq ,
+    apiDataStatic
   }
   
+

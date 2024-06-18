@@ -3,7 +3,11 @@ import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import { catagoryDataType } from '@/types'
 import { chooseRandomNumber } from '@/util'
-
+import ProductCard from './ProductCard'
+import { MdAddShoppingCart } from 'react-icons/md'
+import { AiOutlineSearch } from 'react-icons/ai'
+import { FaRegHeart } from 'react-icons/fa'
+import { FaExchangeAlt } from "react-icons/fa";
 export default function CatagoryCard({data}:{data:catagoryDataType}) {
   const dt = [
     "/img1.jpg" ,
@@ -56,34 +60,69 @@ useEffect(() => {
   return () => clearInterval(interval); // Cleanup on component unmount
 }, [dt.length]);
 
-const onImageChange=(e:React.MouseEvent<HTMLDivElement, MouseEvent>)=>{
+const onImageChange=(e:React.MouseEvent<HTMLButtonElement, MouseEvent>)=>{
   e.preventDefault()
   setCurrentIndex(prevIndex => (prevIndex + 1) % dt.length)
 }
   return (
-    <div className='h-card h-flex'style={{flexDirection:"column"}}>
-        <div className=" ">
-        {data.items.map((d,i)=> (
- currentIndex==i &&
- <div className="" key={i}>
- <div className=' fade-out fade-in-fwd rounded position-relative  ' onClick={onImageChange} style={{width:"100%" ,}} >
-   
-  <img width={500}  src={`${d.img}`} alt="" className="  h-card-img position-static rounded "  style={{width:"100%" }}/>
-   
-   </div>
-   <div className="text-center libre mb-2 h-cat-text" style={{color:"#686868" }}><span className='fw-bold' > {data.category} </span>- {d.label}</div></div> 
-   
-   
+    <div className='h-card  h-flex'style={{flexDirection:"column"}}>
+     
+       
 
+{/* for new card */}
+
+        <div className=''>
+{/* <div className="col-md-3 col-sm-6"> */}
+{data.items.map((d,i)=> (
+ currentIndex==i &&
+ <div className="" style={{margin:"12px"}} key={i}>
+ <div className=' fade-out fade-in-fwd rounded  '  style={{}} >
+
+
+
+        <div className="product-grid ">
+            <div className="product-image ">
+                <div className="">
+                <img width={500}  src={`${d.img}`} alt="" className="   position-static rounded "  style={{width:"100%" }}/> 
+                </div>
+                <ul className="product-links">
+                <li  >
+                  <div data-tip="Change Product">
+                  <button  onClick={onImageChange} className=' bg-transparent border-0 '  > <FaExchangeAlt /></button>
+                   </div>
+                   </li>
+
+               {/* <li> */}
+                {/* <div className="" data-tip="Add to Wishlist"><FaRegHeart/></div></li> */}
+                    <li><div data-tip="Quick View"><AiOutlineSearch /></div></li>
+                    {/* <li><div data-tip="Add to Cart"><MdAddShoppingCart /></div></li> */}
+                </ul>
+                <div className="price btn btn-success">$20.00</div>
+            </div>
+            <div className="product-content">
+                <h3 className="title"><div >{d.label}</div></h3>
+                <ul className="rating">
+                    <li className="fas fa-star"></li>
+                    <li className="fas fa-star"></li>
+                    <li className="fas fa-star"></li>
+                    <li className="fas fa-star disable"></li>
+                    <li className="fas fa-star disable"></li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+    
 
 
 
 ))
 
 }    
-    
-        </div>
-       
-    </div>
+</div>
+</div>
+
   )
 }
