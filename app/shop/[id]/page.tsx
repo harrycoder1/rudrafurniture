@@ -64,7 +64,7 @@ export default function ProductByID({ params }: { params: { id: string } }) {
     
     
 {data?.other.length >0 && data?.other.map((item:any,i:any)=>(
-    <tr>
+    <tr key={i}>
       {/* <th scope="row">1</th> */}
       <th>{item.label}</th>
       <td>{item.value}</td>
@@ -83,7 +83,7 @@ export default function ProductByID({ params }: { params: { id: string } }) {
     
 
 {data?.dimensions?.length >0 && data?.dimensions.map((item:any,i:any)=>(
-    <tr>
+    <tr key={i}>
       {/* <th scope="row">1</th> */}
       <th>{item.label}</th>
       <td>{item.value}</td>
