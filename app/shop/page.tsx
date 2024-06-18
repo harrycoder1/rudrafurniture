@@ -1,6 +1,7 @@
 "use client" ;
 import ProductCard from '@/components/ProductCard'
 import { apiDataStatic } from '@/staticData'
+import Image from 'next/image';
 import React ,{useEffect , useState} from 'react'
 
 export default function Shop() {
@@ -16,16 +17,28 @@ export default function Shop() {
   
   return (
     <div className="container">
-      <div className="">
-
+     {allData?.length >0 ?    <div className='h-flex  ' style={{flexWrap:"wrap" ,margin:"72px" , alignItems:"start"}}>
         
-      </div>
-    <div className='h-flex  ' style={{flexWrap:"wrap" ,margin:"72px" , alignItems:"start"}}>
-        
-       {allData?.map((dta:any , i:String)=>(
-        <div key={`${i}`} className="m-3"><ProductCard data={dta} /></div>
+        {allData?.map((dta:any , i:String)=>(
+         <div key={`${i}`} className="m-3"><ProductCard data={dta} /></div>
+ 
+        ))}
+ 
+ 
+     </div>
+     :
+     <div className="w-100 h-flex" style={{marginTop:"72px" ,height:"80vh" , alignItems:"center"}} >
+      
+      <Image src={'/loading.svg'} width={60} height={60} className='100px]' alt='loading...' />
+            <div className="text-danger"> Loading...</div>
+            
+            </div>
+     
+     }
+ 
+    
+    
 
-       ))}
-    </div></div>
+    </div>
   )
 }

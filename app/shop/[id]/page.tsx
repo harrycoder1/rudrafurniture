@@ -1,6 +1,7 @@
 "use client"
 import { apiDataStatic } from '@/staticData'
 import { productDataType } from '@/types'
+import Image from 'next/image'
 import React ,{useEffect, useState} from 'react'
 import { FaRupeeSign } from 'react-icons/fa'
 
@@ -101,7 +102,12 @@ export default function ProductByID({ params }: { params: { id: string } }) {
 
 
     </div> 
-    : <div className="" style={{marginTop:"72px"}}>Not found {params.id}</div>}
+    : <div className="w-100 h-flex" style={{marginTop:"72px" ,height:"80vh" , alignItems:"center"}} >
+      
+<Image src={'/loading.svg'} width={60} height={60} className='100px]' alt='loading...' />
+      <div className="text-danger"> Loading...</div>
+      
+      </div>}
 
     </div>
   )

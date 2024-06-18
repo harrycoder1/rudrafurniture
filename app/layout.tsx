@@ -34,7 +34,7 @@ export default function RootLayout({
 <link rel="preconnect" href="https://fonts.gstatic.com" />
 <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Viaoda+Libre&display=swap" rel="stylesheet"></link>
       </head>
-      <body className={``}  style={{height:"300vh" ,backgroundColor:"e2e3e5"}}>
+      <body className={``}  style={{height:"auto" ,backgroundColor:"e2e3e5"}}>
       <Nav />
 
 <div className="  ">
