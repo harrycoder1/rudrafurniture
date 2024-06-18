@@ -31,10 +31,10 @@ export default function Nav() {
               <li className="my-2 outline-none border-0 michroma text-gr  " style={{cursor:"pointer"}} data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"  >Catagories</li>
               <Link className="my-2 michroma text-gr  "  href={'/about'}>About</Link>
               </ul>
-              <form className="h-flex  mt-3 mx-1" role="search">
+              {/* <form className="h-flex  mt-3 mx-1" role="search">
               <input className="text-dark me-2  h-text-sm h-form-input-s  " type="search" placeholder="type here..."style={{fontSize:"12px" ,width:"auto"}} aria-label="Search" />
               <button className="h-btn" style={{fontSize:"12px" }}  type="submit">Search</button>
-              </form>
+              </form> */}
             </div>
           </div>
         </div>
@@ -54,10 +54,10 @@ export default function Nav() {
 
             </div>
             <div className="">
-            <form className="h-flex " role="search">
+            {/* <form className="h-flex " role="search">
             <input className="text-dark me-2  h-text-sm h-form-input  " type="search" placeholder="type here..."style={{fontSize:"12px" ,width:"200px"}} aria-label="Search" />
             <button className="h-btn" style={{fontSize:"12px" }}  type="submit">Search</button>
-              </form>
+              </form> */}
             </div>
             </div>
            

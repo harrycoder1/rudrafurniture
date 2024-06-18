@@ -56,7 +56,7 @@ const onImageChange=(e:React.MouseEvent<HTMLButtonElement, MouseEvent>)=>{
     <div className='pr-card-img h-p-card  h-flex'style={{flexDirection:"column" , height:"auto"}}>
       <div className='h-p-box'>
 <div className="pr-card-img">
-<Link href={`/shop/${data._id}`}  className='h-p-title'><img src={`${data.img[0]}`} alt="" style={{width:"100%" ,height:"100%" ,borderRadius: "10px 10px 0px 0px"}} /> </Link>
+<Link href={`/shop/${data._id}`}  className='h-p-title'><img src={`${data.img[0]}`} alt="" style={{width:"100%" ,height:"100%" ,borderRadius: "0px"}} /> </Link>
 </div>
 <div className="h-p-cont">
     {/* ======for tempary take it name */}

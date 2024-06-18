@@ -639,7 +639,7 @@ flex-wrap: wrap;
   min-width: 250px;
     padding: 12px 42px;
     font-size: 14px;
-    border-radius: 9px;
+    border-radius: 0px;
     border: none;
     /* border-bottom: 2px solid orange; */
     /* background: #8080801a; */
@@ -890,12 +890,12 @@ backdrop-filter: blur(9.9px);
 }
 .pr-card-img{
   cursor: pointer;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 .h-p-card{
   flex-direction: column;
   height: auto;
-  background: #9f98980f;
+  background: #ffffff63;
   box-shadow: 0px 0px 5px 0px #afafaf;
 }
 .h-p-card:hover{
