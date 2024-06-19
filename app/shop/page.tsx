@@ -3,6 +3,7 @@ import ProductCard from '@/components/ProductCard'
 import { apiDataStatic, furnitureData } from '@/staticData'
 import Image from 'next/image';
 import React ,{useEffect , useState} from 'react'
+import { useSearchParams } from "next/navigation";
 
 export default function Shop() {
   const [allData ,setAllData] =useState<any>([])
@@ -28,23 +29,38 @@ e.preventDefault() ;
      }
      const handleChangeCategory =(e:any) =>{
       e.preventDefault() ; 
-      setFiltPara(pre =>({...pre , [e.target.name]:e.target.value}))
+      setFiltPara(pre =>({...pre , [e.target.name]:e.target.value , minPrice:0 , maxPrice:100000}))
+      
       let filt = allData.filter((d:any) => d.category.toLowerCase() === e.target.value.toLowerCase()  )
       setFilterData(filt)
     }
      const handleMinPrice =(e:any)=>{
+      let filt ;
 setFiltPara(pre =>({...pre , [e.target.name]:e.target.value}))
-let filt1 = allData.filter((d:any) => d.category.toLowerCase() === filtPara.category.toLowerCase() )
-let filt = filt1.filter((d:any) => d.price> e.target.value  )
-setFilterData(filt)
+if( filtPara.category !=="" ){
+  let filt1 = allData.filter((d:any) => d.category.toLowerCase() === filtPara.category.toLowerCase())
+
+   filt = filt1.filter((d:any) => d.price >e.target.value  )
+   setFilterData(filt)
+   return
+ }
+ filt = allData.filter((d:any) => d.price >e.target.value  )
+   setFilterData(filt)
      }
 
      const handleMaxPrice =(e:any)=>{
+      let filt ;
       setFiltPara(pre =>({...pre , [e.target.name]:e.target.value}))
-let filt1 = allData.filter((d:any) => d.category.toLowerCase() === filtPara.category.toLowerCase())
+     if( filtPara.category !=="" ){
+      let filt1 = allData.filter((d:any) => d.category.toLowerCase() === filtPara.category.toLowerCase())
 
-let filt = filt1.filter((d:any) => d.price <e.target.value  )
-setFilterData(filt)
+       filt = filt1.filter((d:any) => d.price <e.target.value  )
+       setFilterData(filt)
+       return
+     }
+     filt = allData.filter((d:any) => d.price <e.target.value  )
+     setFilterData(filt)
+
      }
      
 
@@ -52,6 +68,20 @@ setFilterData(filt)
      const handleReset =()=>{
       setFilterData(allData)
      }
+
+    //  for recieve category
+     const searchParam = useSearchParams();
+     const category = searchParam.get("category");
+     useEffect(() => {
+const changeCate =()=>{
+  setFiltPara(pre =>({...pre , category:`${category}`}))
+  let filt = allData.filter((d:any) => d.category.toLowerCase() === category?.toLowerCase()  )
+  setFilterData(filt)
+  console.log("Im runing bRO")
+}
+allData.length>0 && category!=null && changeCate()
+     }, [allData])
+     
   return (
     <div className="container">
 <div className=" " style={{marginTop:"72px"}}>
@@ -59,7 +89,7 @@ setFilterData(filt)
     <input className="text-dark me-2  h-text-sm h-form-input  " onChange={handleChangeText} name="searchText" type="search" placeholder="type here..."style={{fontSize:"12px" ,width:"100%"}} aria-label="Search" />  
  </div>
 <div className="h-flex" style={{flexWrap:"wrap"}}>
-  <button className='text-dark me-2  h-text-sm h-form-input ' onClick={handleReset}>All</button>
+  <button className='text-dark me-2  h-text-sm h-form-input ' onClick={handleReset}>All </button>
   <select name="category" value={filtPara.category} onChange={handleChangeCategory} className='text-dark me-2  h-text-sm h-form-input' id="cars">
   <option  value={""} className='text-center'>{"Select Category"}</option>
     

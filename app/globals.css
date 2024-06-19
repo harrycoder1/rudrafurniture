@@ -931,7 +931,16 @@ backdrop-filter: blur(9.9px);
 .h-pv-btn{
   box-shadow: 1px 1px 7px #595252;
 }
-
+.h-namelabel{
+  color: white;
+  text-shadow: -1px 1px 7px #313030;
+  z-index:2 ;
+   top:0 ;
+   right:0 ;
+   left:0 ;
+  position: "absolute" ;
+   background: "#cfcfcf7a"
+}
 .slide-in-left {
 	-webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;

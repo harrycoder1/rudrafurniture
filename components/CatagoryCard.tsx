@@ -8,6 +8,7 @@ import { MdAddShoppingCart } from 'react-icons/md'
 import { AiOutlineSearch } from 'react-icons/ai'
 import { FaRegHeart } from 'react-icons/fa'
 import { FaExchangeAlt } from "react-icons/fa";
+import Link from 'next/link'
 export default function CatagoryCard({data}:{data:catagoryDataType}) {
   const dt = [
     "/img1.jpg" ,
@@ -85,10 +86,16 @@ const onImageChange=(e:any)=>{
                 <div className="">
                 <img width={500}  src={`${d.img}`} alt="" className="   position-static rounded "  style={{width:"100%" }}/> 
                 </div>
-                
+               
+                <div className="h-namelabel shadow-md fw-bold text-center " style={{zIndex:2 , top:0 , right:0 , left:0 ,  position: "absolute" ,    background: "#cfcfcf7a"}}>{d.label}</div>
+                <div className="price btn btn-success shadow-sm "><Link href={{pathname: "/shop",query: {category: `${data.category}`}}} style={{textDecoration:"none" , fontStyle:"10px"}} className='text-white '  >shop now</Link></div>
+
+
+
+
             </div>
             <div className="product-content">
-                <h3 className="title"><div >{d.label}</div></h3>
+                <h3 className="title"><div >{data.category}</div></h3>
                 <ul className="rating">
                     <li className="fas fa-star"></li>
                     <li className="fas fa-star"></li>
