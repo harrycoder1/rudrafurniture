@@ -64,13 +64,13 @@ export default function Slider() {
 :
 // for small screen
 <div className="myslider " >
-<div id="carouselExampleControls" className="carousel d-block d-md-none  slide w-100 h-100  hres"  data-bs-ride="carousel">
+{/* <div id="carouselExampleControls" className="carousel d-block d-md-none  slide w-100 h-100  hres"  data-bs-ride="carousel">
     <div className="carousel-inner" style={{width:"100%"}}>
 
       {slider.length >0 && slider?.map((d:any , i:any)=>(
  <div key={i} className={`carousel-item    h-flex hres `} >
  <Image fill src={d.imgsmall} className="d-block w-100   "  style={{width:"100%" ,  }}alt="..." />
- {/* <img  /> */}
+
 </div>
       ))}
      
@@ -85,11 +85,11 @@ export default function Slider() {
       <span className="carousel-control-next-icon" aria-hidden="true"></span>
       <span className="visually-hidden">Next </span>
     </button>
-  </div>
+  </div> */}
 
 
   {/* for large screen */}
-  <div id="carouselExampleControls1" className="carousel d-none d-md-block slide w-100 h-100  hres"  data-bs-ride="carousel">
+  <div id="hellocontrol" className="carousel d-none d-md-block slide w-100 h-100  hres"  data-bs-ride="carousel">
     <div className="carousel-inner" style={{width:"100%"}}>
 
       {slider.length >0 && slider?.map((d:any , i:any)=>(
@@ -102,11 +102,11 @@ export default function Slider() {
 
       
     </div>
-    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
+    <button className="carousel-control-prev" type="button" data-bs-target="#hellocontrol" data-bs-slide="prev">
       <span className="carousel-control-prev-icon" aria-hidden="true"></span>
       <span className="visually-hidden">Previous</span>
     </button>
-    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
+    <button className="carousel-control-next" type="button" data-bs-target="#hellocontrol" data-bs-slide="next">
       <span className="carousel-control-next-icon" aria-hidden="true"></span>
       <span className="visually-hidden">Next</span>
     </button>
