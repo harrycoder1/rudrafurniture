@@ -1,7 +1,24 @@
-import { faq } from '@/staticData'
-import React from 'react'
-
+"use client"
+import { SiteUrl2 } from '@/util/url'
+// import { faq } from '@/staticData'
+import React, { useState } from 'react'
+import { useEffect } from 'react'
 export default function FAQ() {
+
+  const [faq ,setFaq] = useState<any>([])
+
+  useEffect(() => {
+ 
+    const fetchData = async()=>{
+const res = await fetch(`${SiteUrl2}/api/faq` , {method:"GET"})
+const data = await res.json()
+data.ok ==true &&
+setFaq(data.data)
+    }
+
+    fetchData()
+  }, [])
+  
   return (
     <div>
     <section className="bsb-faq-3 py-3 py-md-5 py-xl-8">
@@ -28,7 +45,7 @@ export default function FAQ() {
               <div className="accordion accordion-flush" id="faqAccount">
 
                 
-{faq.map((d,i) =>(
+{faq?.map((d:any,i:any) =>(
     <div key={i} className="accordion-item bg-transparent border-top border-bottom py-3">
     <h2 className="accordion-header" id={`faqAccountHeading`+i}>
       <button className="accordion-button collapsed bg-transparent fw-bold shadow-none text-gr" type="button" data-bs-toggle="collapse" data-bs-target={`#faqAccountCollapse`+i} aria-expanded="false" aria-controls={`faqAccountCollapse`+i} style={{fontSize:"16px"}}>

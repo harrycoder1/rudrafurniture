@@ -1,4 +1,5 @@
 "use client"
+import { SiteUrl2 } from '@/util/url';
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 
@@ -20,13 +21,27 @@ imgs:"/offer/img1.jpg"
           }
   
 ]
+
+const [sliderOffer , setSliderOffer] = useState<any>([])
+useEffect(() => {
+const fetData=async()=>{
+const res = await fetch(`${SiteUrl2}/api/offer`)
+const data = await  res.json() ;
+data.ok==true && setSliderOffer(data.data)
+}
+fetData()
+}, [])
+
+
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex(prevIndex => (prevIndex + 1) % slides.length);
+      setCurrentIndex(prevIndex => (prevIndex + 1) % sliderOffer.length);
     }, 2000);
 
+
+
     return () => clearInterval(interval);
-  }, [slides.length]);
+  }, [sliderOffer.length]);
   return (
     <div className="my-5">
 
@@ -35,8 +50,16 @@ imgs:"/offer/img1.jpg"
 
     
 
-{slides.map((d,i)=> (
- currentIndex==i &&   <div key={i} className='fade-out fade-in-fwd'style={{width:"100%" , height:"180px" ,}} ><Image key={i} src={d.imgs} fill alt='' className=' position-static rounded scale-in-center'  /></div>
+{sliderOffer?.map((d:any,i:any)=> (
+ currentIndex==i &&   
+ 
+ <div className="">
+ <div key={i} className='fade-out  fade-in-fwd  d-none d-md-block 'style={{width:"100%" , height:"180px" ,}} ><Image key={i} src={d.img} fill alt='' className=' position-static rounded scale-in-center'  /></div>
+
+ <div key={i} className='fade-out  fade-in-fwd  d-block d-md-none'style={{width:"100%" , height:"180px" ,}} ><Image key={i} src={d.imgsmall} fill alt='' className=' position-static rounded scale-in-center'  /></div>
+
+ </div>
+
 ))}
 
           </div>

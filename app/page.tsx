@@ -13,7 +13,6 @@ export default function Home() {
 <FAQ />
 
 </div>
-<Footer />
 {/* <img src="https://res.cloudinary.com/dsepeslgc/image/upload/v1718299549/rudraFurniture-akshay/Bathroom%20Furniture/Medicine_Cabinets_kjdkli.png" alt="not found" /> */}
     </main>
   )
