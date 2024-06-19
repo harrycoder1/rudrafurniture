@@ -10,9 +10,10 @@ export default function Slider({slideData}:{slideData:any}) {
   const [slider , setSlider] = useState<any>([])
 
   
-  const sataicData = ["/img1.jpg" , "/img2.jpg" ,"/img3.jpg"]
+  const sataticData = ["/img1.jpg" , "/img2.jpg" ,"/img3.jpg"]
   const [currIndex ,setCurrIndex] = useState(0)
   const [isLeft , setIsLeft] = useState<Boolean>(true)
+  const [staticIndex ,setStaticIndex] = useState<any>(0)
   useEffect(() => {
     const fetData=async()=>{
     const res = await fetch(`${SiteUrl2}/api/slider`)
@@ -49,32 +50,44 @@ setIsLeft(true)
     // setSlider(curr)
   }
 
-
+const staticNext =()=>{
+  let curr = (staticIndex+1 )% sataticData.length
+  setStaticIndex(curr)
+  setIsLeft(true)
+}
+const staticPrev = () =>{
+  let curr =Math.abs( (staticIndex-1) % sataticData.length)
+  console.log(curr)
+setStaticIndex(curr)
+setIsLeft(false)
+  // setSlider(curr)
+}
   return (
     <div>
 <div className="" >
 {slider.length ==0  ?
 
 <div className="myslider " >
-<div id="carouselExampleControls3" className="carousel slide w-100 h-100  hres"  data-bs-ride="carousel">
-    <div className="carousel-inner" style={{width:"100%"}}>
-
-      {sataicData.length >0 && sataicData?.map((d:any , i:any)=>(
- <div key={i} className={`carousel-item  h-flex hres `} >
- <Image fill src={d} className="d-block w-100   "  style={{width:"100%" ,  }} alt="..." />
+<div id="carouselExampleControls3" className="  w-100 h-100  hres"  data-bs-ride="carousel">
+    <div className="" style={{width:"100%"}}>
+    {sataticData.length >0 && sataticData?.map((d:any , i:any)=>(
+        currIndex === i &&
+ <div key={i} className={`  h-flex hres ${isLeft ?"slide-in-left" :"slide-in-right"}`} >
+ <Image fill src={sataticData[staticIndex]} className="d-block w-100   "  style={{width:"100%" ,  }}alt="..." />
  {/* <img  /> */}
 </div>
       ))}
+     
      
 
       
     </div>
 
-    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
+    <button onClick={staticPrev} className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
       <span className="carousel-control-prev-icon" aria-hidden="true"></span>
       <span className="visually-hidden">Previous</span>
     </button>
-    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
+    <button onClick={staticNext} className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
       <span className="carousel-control-next-icon" aria-hidden="true"></span>
       <span className="visually-hidden">Next</span>
     </button>
