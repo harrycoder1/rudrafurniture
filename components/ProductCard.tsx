@@ -53,7 +53,7 @@ const onImageChange=(e:React.MouseEvent<HTMLButtonElement, MouseEvent>)=>{
   setCurrentIndex(prevIndex => (prevIndex + 1) % dt.length)
 }
   return (
-    <div className='pr-card-img h-p-card  h-flex'style={{flexDirection:"column" , height:"auto"}}>
+    <div className='mx-2 pr-card-img h-p-card  h-flex'style={{flexDirection:"column" , height:"auto"}}>
       <div className='h-p-box'>
 <div className="pr-card-img">
 <Link href={`/shop/${data._id}`}  className='h-p-title'><img src={`${data.img[0]}`} alt="" style={{width:"100%" ,height:"100%" ,borderRadius: "0px"}} /> </Link>

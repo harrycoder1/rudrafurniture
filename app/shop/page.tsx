@@ -107,11 +107,11 @@ allData.length>0 && category!=null && changeCate()
   </div>
 </div>
 
-     {allData?.length >0 ?    <div className='h-flex  ' style={{flexWrap:"wrap"  , alignItems:"start"}}>
+     {allData?.length >0 ?    <div className='h-flex  h-resp-box ' style={{flexWrap:"wrap"  , alignItems:"start"}}>
       
         
         {filterData.length >0 ? filterData?.map((dta:any , i:String)=>(
-         <div key={`${i}`} className="my-3"> 
+         <div key={`${i}`} className=""> 
 
          <div className="slide-large"><ProductCard data={dta} /></div>
          <div className="slide-small"><ProductCardSamall data={dta} /></div>

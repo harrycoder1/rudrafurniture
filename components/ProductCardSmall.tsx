@@ -53,8 +53,8 @@ const onImageChange=(e:React.MouseEvent<HTMLButtonElement, MouseEvent>)=>{
   setCurrentIndex(prevIndex => (prevIndex + 1) % dt.length)
 }
   return (
-    <div className=' h-flex'style={{flexDirection:"column" , height:"auto"}}>
-      <div className='h-p-box h-flex w-100' style={{    alignItems: "start"}}>
+    <div className=' h-flex my-1'style={{flexDirection:"column" ,     padding:" 3px 0px", height:"auto",borderBottom:" 0.3px solid #cecece"}}>
+      <div className='h-p-box h-flex w-100' style={{    alignItems: "start" }}>
 <div className="">
 <Link href={`/shop/${data._id}`}  className='h-p-title' ><img src={`${data.img[0]}`} alt="" style={{width:"150px" ,height:"150px" ,borderRadius: "0px"}} /> </Link>
 </div>
@@ -65,9 +65,9 @@ const onImageChange=(e:React.MouseEvent<HTMLButtonElement, MouseEvent>)=>{
     <span className="h-p-cate" style={{marginRight:"2px" ,fontSize: "9px"}}>{data.category}</span>
     <span className="h-p-cate " style={{fontSize: "9px"}}>Available : {data.availability.toString()}</span>
     </div>
-   <p className='h-p-descrip'> {data.description.substring(0 ,50)}...</p>
+   <p className='h-p-descrip' style={{margin:"2px"}}> {data.description.substring(0 ,50)}...</p>
 
-  <div className="h-p-price h-flex" style={{justifyContent:"start" ,fontSize:"20px" ,alignItems:"start"}}><FaRupeeSign className='' /> <span> {data.price.toString() }</span></div> 
+  <div className="h-p-price h-flex" style={{justifyContent:"start" ,fontSize:"20px" ,alignItems:"center" ,color: "#1b975d"}}><FaRupeeSign className='' /> <span> {data.price.toString() }</span></div> 
 </div>
 
 
