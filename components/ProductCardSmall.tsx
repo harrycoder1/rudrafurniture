@@ -63,7 +63,7 @@ const onImageChange=(e:React.MouseEvent<HTMLButtonElement, MouseEvent>)=>{
     <h4 className='h-p-title'><Link href={`/shop/${data._id}`}  className='h-p-title' style={{    fontSize: "18px"}}>{data.name}</Link> </h4>
     <div className="h-flex" style={{justifyContent:"end"}}>
     <span className="h-p-cate" style={{marginRight:"2px" ,fontSize: "9px"}}>{data.category}</span>
-    <span className="h-p-cate " style={{fontSize: "9px"}}>Available : {data.availability.toString()}</span>
+    <span className="h-p-cate " style={{fontSize: "9px" ,color: "#73d473"}} >Available : {data.availability.toString()}</span>
     </div>
    <p className='h-p-descrip' style={{margin:"2px"}}> {data.description.substring(0 ,50)}...</p>
 

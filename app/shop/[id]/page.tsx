@@ -48,8 +48,8 @@ export default function ProductByID({ params }: { params: { id: string } }) {
     <div className="h-p-cont">
     <h4 className='h-p-title'>{data.name}</h4>
     <div className="h-flex" style={{justifyContent:"end"}}>
-    <span className="h-p-cate" style={{marginRight:"2px"}}>{data.category}</span>
-    <span className="h-p-cate ">Available : {data.availability.toString()}</span>
+    <span className="h-p-cate" style={{marginRight:"2px" }}>{data.category}</span>
+    <span className="h-p-cate " style={{color: "#73d473"}}>Available : {data.availability.toString()}</span>
     </div>
    <p className='h-p-descrip'> {data.description}</p>
 <div className="h-p-price h-flex" style={{justifyContent:"start"}}><FaRupeeSign className='' style={{fontSize:"21px"}} /> <span> {data.price.toString() }</span></div> 
