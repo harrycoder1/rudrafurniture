@@ -7,6 +7,7 @@ import Footer from "./Footer";
 import CatagoryList from "./CatagoryList";
 import SlideOffer from "./SlideOffer";
 import FAQ from "./FAQ";
+import SliderOfferPage from "./SliderOfferPage";
 
 
 export {
@@ -18,5 +19,6 @@ export {
     Footer,
     SlideOffer,
     CatagoryList,
-    FAQ
+    FAQ,
+    SliderOfferPage
 }

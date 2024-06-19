@@ -1,13 +1,14 @@
 // import { Header } from '@/components'
 // import Image from 'next/image'
-import { Catagory, Contact, FAQ, Footer, SlideOffer, Slider } from "@/components"
+import { Catagory, Contact, FAQ, Footer, SlideOffer, Slider, SliderOfferPage } from "@/components"
+import SliderPage from "@/components/SliderPage"
 export default function Home() {
   return (
     <main className="">
      
-<Slider />
+<SliderPage />
 <div className="container " >
-  <SlideOffer />
+  <SliderOfferPage />
 <Catagory />
 <Contact />
 <FAQ />

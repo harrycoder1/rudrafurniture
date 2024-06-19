@@ -3,7 +3,7 @@ import { SiteUrl2 } from '@/util/url';
 import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 
-export default function SlideOffer() {
+export default function SlideOffer({slidesData}:{slidesData:any}) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const slides=[
     {
@@ -22,26 +22,26 @@ imgs:"/offer/img1.jpg"
   
 ]
 
-const [sliderOffer , setSliderOffer] = useState<any>([])
-useEffect(() => {
-const fetData=async()=>{
-const res = await fetch(`${SiteUrl2}/api/offer`)
-const data = await  res.json() ;
-data.ok==true && setSliderOffer(data.data)
-}
-fetData()
-}, [])
+const [sliderOffer , setSliderOffer] = useState<any>(slidesData)
+// useEffect(() => {
+// const fetData=async()=>{
+// const res = await fetch(`${SiteUrl2}/api/offer`)
+// const data = await  res.json() ;
+// data.ok==true && setSliderOffer(data.data)
+// }
+// fetData()
+// }, [])
 
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setCurrentIndex(prevIndex => (prevIndex + 1) % sliderOffer.length);
-  //   }, 2000);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex(prevIndex => (prevIndex + 1) % sliderOffer.length);
+    }, 4000);
 
 
 
-  //   return () => clearInterval(interval);
-  // }, [sliderOffer.length]);
+    return () => clearInterval(interval);
+  }, [sliderOffer.length]);
   const nextImg =()=>{
     setCurrentIndex(prevIndex => (prevIndex + 1) % sliderOffer.length);
   }

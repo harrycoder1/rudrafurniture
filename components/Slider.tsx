@@ -6,20 +6,33 @@ import Intro from "./Intro";
 import { useEffect, useState } from "react";
 import { SiteUrl2 } from "@/util/url";
 
-export default function Slider() {
+export default function Slider({slideData}:{slideData:any}) {
   const [slider , setSlider] = useState<any>([])
-  useEffect(() => {
-  const fetData=async()=>{
-  const res = await fetch(`${SiteUrl2}/api/slider`)
-  const data = await  res.json() ;
-  data.ok==true && setSlider(data.data)
-  }
-  fetData()
-  }, [])
+
   
   const sataicData = ["/img1.jpg" , "/img2.jpg" ,"/img3.jpg"]
   const [currIndex ,setCurrIndex] = useState(0)
   const [isLeft , setIsLeft] = useState<Boolean>(true)
+  useEffect(() => {
+    const fetData=async()=>{
+    const res = await fetch(`${SiteUrl2}/api/slider`)
+    const data = await  res.json() ;
+    data.ok==true && setSlider(data.data)
+    }
+    fetData()
+    }, [])
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrIndex(prevIndex => (prevIndex + 1) % slider.length);
+    }, 4000);
+
+
+
+    return () => clearInterval(interval);
+  }, [slider.length]);
+
+
   const prevIndex = () =>{
     let curr =Math.abs( (currIndex-1) % slider.length)
     console.log(curr)
