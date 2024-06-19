@@ -36,7 +36,7 @@ export default function Slider() {
 {slider.length ==0  ?
 
 <div className="myslider " >
-<div id="carouselExampleControls" className="carousel slide w-100 h-100  hres"  data-bs-ride="carousel">
+<div id="carouselExampleControls3" className="carousel slide w-100 h-100  hres"  data-bs-ride="carousel">
     <div className="carousel-inner" style={{width:"100%"}}>
 
       {sataicData.length >0 && sataicData?.map((d:any , i:any)=>(
@@ -50,11 +50,11 @@ export default function Slider() {
       
     </div>
 
-    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
       <span className="carousel-control-prev-icon" aria-hidden="true"></span>
       <span className="visually-hidden">Previous</span>
     </button>
-    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
       <span className="carousel-control-next-icon" aria-hidden="true"></span>
       <span className="visually-hidden">Next</span>
     </button>

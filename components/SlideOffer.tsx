@@ -33,15 +33,18 @@ fetData()
 }, [])
 
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex(prevIndex => (prevIndex + 1) % sliderOffer.length);
-    }, 2000);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setCurrentIndex(prevIndex => (prevIndex + 1) % sliderOffer.length);
+  //   }, 2000);
 
 
 
-    return () => clearInterval(interval);
-  }, [sliderOffer.length]);
+  //   return () => clearInterval(interval);
+  // }, [sliderOffer.length]);
+  const nextImg =()=>{
+    setCurrentIndex(prevIndex => (prevIndex + 1) % sliderOffer.length);
+  }
   return (
     <div className="my-5">
 
@@ -50,13 +53,13 @@ fetData()
 
     
 
-{sliderOffer?.map((d:any,i:any)=> (
+{sliderOffer.length >0 && sliderOffer?.map((d:any,i:any)=> (
  currentIndex==i &&   
  
- <div className=""  key={i}>
- <div className='fade-out  fade-in-fwd  d-none d-md-block 'style={{width:"100%" , height:"180px" ,}} ><Image key={i} src={d.img} fill alt='' className=' position-static rounded scale-in-center'  /></div>
+ <div className=""  key={i} onClick={nextImg}>
+ <div className='fade-out  fade-in-fwd  d-none d-md-block 'style={{width:"100%" , height:"180px" ,}} ><Image key={i} src={sliderOffer[currentIndex].img} fill alt='' className=' position-static rounded scale-in-center'  /></div>
 
- <div className='fade-out  fade-in-fwd  d-block d-md-none'style={{width:"100%" , height:"180px" ,}} ><Image key={i} src={d.imgsmall} fill alt='' className=' position-static rounded scale-in-center'  /></div>
+ <div className='fade-out  fade-in-fwd  d-block d-md-none'style={{width:"100%" , height:"180px" ,}} ><Image key={i} src={sliderOffer[currentIndex].imgsmall} fill alt='' className=' position-static rounded scale-in-center'  /></div>
 
  </div>
 
