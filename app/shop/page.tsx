@@ -1,5 +1,7 @@
 "use client" ;
-import ProductCard from '@/components/ProductCard'
+// import ProductCard from '@/components/ProductCard'
+import ProductCard from '@/components/ProductCard';
+import ProductCardSamall from '@/components/ProductCardSmall';
 import { apiDataStatic, furnitureData } from '@/staticData'
 import Image from 'next/image';
 import React ,{useEffect , useState} from 'react'
@@ -109,7 +111,12 @@ allData.length>0 && category!=null && changeCate()
       
         
         {filterData.length >0 ? filterData?.map((dta:any , i:String)=>(
-         <div key={`${i}`} className="m-3"><ProductCard data={dta} /></div>
+         <div key={`${i}`} className="my-3"> 
+
+         <div className="slide-large"><ProductCard data={dta} /></div>
+         <div className="slide-small"><ProductCardSamall data={dta} /></div>
+
+         </div>
  
         ))
       

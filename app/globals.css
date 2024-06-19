@@ -1031,6 +1031,9 @@ display: none;
   .slide-small{
 display: block;
   }
+  .h-shopbtn{
+    font-size: 8px;
+  }
 }
 @media only screen and (min-width:760px) {
   .slide-large{
@@ -1038,5 +1041,8 @@ display: block;
   }
    .slide-small{
  display: none;
+   }
+   .h-shopbtn{
+    font-size: 10px;
    }
  }

@@ -3,7 +3,7 @@ import Image from 'next/image'
 import React, { useEffect, useState } from 'react'
 import { catagoryDataType } from '@/types'
 import { chooseRandomNumber } from '@/util'
-import ProductCard from './ProductCard'
+// import ProductCard from './ProductCard'
 import { MdAddShoppingCart } from 'react-icons/md'
 import { AiOutlineSearch } from 'react-icons/ai'
 import { FaRegHeart } from 'react-icons/fa'
@@ -88,7 +88,7 @@ const onImageChange=(e:any)=>{
                 </div>
                
                 <div className="h-namelabel shadow-md fw-bold text-center " style={{zIndex:2 , top:0 , right:0 , left:0 ,  position: "absolute" ,    background: "#cfcfcf7a"}}>{d.label}</div>
-                <div className="price btn btn-success shadow-sm "><Link href={{pathname: "/shop",query: {category: `${data.category}`}}} style={{textDecoration:"none" , fontStyle:"10px"}} className='text-white '  >shop now</Link></div>
+                <div className="price btn btn-success h-shopbtn shadow-sm "><Link href={{pathname: "/shop",query: {category: `${data.category}`}}} style={{textDecoration:"none" , }} className='text-white '  >shop now</Link></div>
 
 
 
