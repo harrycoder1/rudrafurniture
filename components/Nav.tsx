@@ -27,12 +27,12 @@ export default function Nav() {
               {/* {navlinks.map((d, i) => (<li className='nav-item my-2'><Link className="  michroma text-gr   " key={i} href={d.link}>{d.label}</Link></li>))} */}
 
 
-              <Link className="my-2 michroma text-gr  "   href={'/'}>Home</Link>
-              <Link className="mx-3 michroma text-gr  "   href={'/shop'}>Shope</Link>
+              <Link className="my-2 michroma nav-item text-gr  "   href={'/'}> <div data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">Home</div></Link>
+              <Link className=" michroma nav-item text-gr nav-item "   href={'/shop'}><div data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">Shope</div></Link>
 
               {/* <li className="my-2 outline-none border-0 michroma text-gr  " style={{cursor:"pointer"}} data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"  >Catagories</li> */}
-              <Link className="my-2 michroma text-gr  "  href={'/about'}>About</Link>
-              <Link className="mx-3 michroma text-gr  "  href={'/#FAQ'}>FAQ</Link>
+              <Link className="my-2 michroma text-gr nav-item "  href={'/about'}><div data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">About</div></Link>
+              <Link className=" michroma text-gr nav-item  "  href={'/#FAQ'}><div data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">FAQ</div></Link>
 
               </ul>
               {/* <form className="h-flex  mt-3 mx-1" role="search">
