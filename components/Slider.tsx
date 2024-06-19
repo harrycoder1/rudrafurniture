@@ -40,7 +40,7 @@ export default function Slider() {
     <div className="carousel-inner" style={{width:"100%"}}>
 
       {sataicData.length >0 && sataicData?.map((d:any , i:any)=>(
- <div key={i} className={`carousel-item ${currIndex ==i ? "active":""}   h-flex hres `} >
+ <div key={i} className={`carousel-item  h-flex hres `} >
  <Image fill src={d} className="d-block w-100   "  style={{width:"100%" ,  }}alt="..." />
  {/* <img  /> */}
 </div>
@@ -68,7 +68,7 @@ export default function Slider() {
     <div className="carousel-inner" style={{width:"100%"}}>
 
       {slider.length >0 && slider?.map((d:any , i:any)=>(
- <div key={i} className={`carousel-item ${currIndex ==i ? "active":""}   h-flex hres `} >
+ <div key={i} className={`carousel-item    h-flex hres `} >
  <Image fill src={d.imgsmall} className="d-block w-100   "  style={{width:"100%" ,  }}alt="..." />
  {/* <img  /> */}
 </div>
@@ -83,7 +83,7 @@ export default function Slider() {
     </button>
     <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
       <span className="carousel-control-next-icon" aria-hidden="true"></span>
-      <span className="visually-hidden">Next</span>
+      <span className="visually-hidden">Next </span>
     </button>
   </div>
 
