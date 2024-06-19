@@ -21,11 +21,11 @@ setFaq(data.data)
   
   return (
     <div>
-    <section className="bsb-faq-3 py-3 py-md-5 py-xl-8">
+    <section className="bsb-faq-3 py-3 py-md-5 py-xl-8" id='FAQ'>
       <div className="container">
         <div className="row justify-content-md-center">
           <div className="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
-            <h2 className="mb-4 display-5 text-center libre h-heading fw-bolder">Frequently Asked <span className='text-gr'>Questions</span> </h2>
+            <h2  className="mb-4 display-5 text-center libre h-heading fw-bolder">Frequently Asked <span className='text-gr'>Questions</span> </h2>
             
             {/* <hr className="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle" /> */}
           </div>

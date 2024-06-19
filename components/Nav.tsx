@@ -28,8 +28,12 @@ export default function Nav() {
 
 
               <Link className="my-2 michroma text-gr  "   href={'/'}>Home</Link>
-              <li className="my-2 outline-none border-0 michroma text-gr  " style={{cursor:"pointer"}} data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"  >Catagories</li>
+              <Link className="mx-3 michroma text-gr  "   href={'/shop'}>Shope</Link>
+
+              {/* <li className="my-2 outline-none border-0 michroma text-gr  " style={{cursor:"pointer"}} data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"  >Catagories</li> */}
               <Link className="my-2 michroma text-gr  "  href={'/about'}>About</Link>
+              <Link className="mx-3 michroma text-gr  "  href={'/#FAQ'}>FAQ</Link>
+
               </ul>
               {/* <form className="h-flex  mt-3 mx-1" role="search">
               <input className="text-dark me-2  h-text-sm h-form-input-s  " type="search" placeholder="type here..."style={{fontSize:"12px" ,width:"auto"}} aria-label="Search" />
@@ -65,8 +69,10 @@ export default function Nav() {
 
               <Link className="mx-3 michroma text-gr  "   href={'/'}>Home</Link>
               <Link className="mx-3 michroma text-gr  "   href={'/shop'}>Shope</Link>
-              <button className="mx-3 outline-none border-0 michroma text-gr  " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"  >Catagories</button>
+              {/* <button className="mx-3 outline-none border-0 michroma text-gr  " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"  >Catagories</button> */}
               <Link className="mx-3 michroma text-gr  "  href={'/about'}>About</Link>
+              <Link className="mx-3 michroma text-gr  "  href={'/#FAQ'}>FAQ</Link>
+
             </div>
             
           </div>

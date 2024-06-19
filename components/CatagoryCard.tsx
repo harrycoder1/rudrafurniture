@@ -60,7 +60,7 @@ useEffect(() => {
   return () => clearInterval(interval); // Cleanup on component unmount
 }, [dt.length]);
 
-const onImageChange=(e:React.MouseEvent<HTMLButtonElement, MouseEvent>)=>{
+const onImageChange=(e:any)=>{
   e.preventDefault()
   setCurrentIndex(prevIndex => (prevIndex + 1) % dt.length)
 }
@@ -80,24 +80,12 @@ const onImageChange=(e:React.MouseEvent<HTMLButtonElement, MouseEvent>)=>{
 
 
 
-        <div className="product-grid ">
+        <div className="product-grid " onClick={onImageChange}>
             <div className="product-image ">
                 <div className="">
                 <img width={500}  src={`${d.img}`} alt="" className="   position-static rounded "  style={{width:"100%" }}/> 
                 </div>
-                <ul className="product-links">
-                <li  >
-                  <div data-tip="Change Product">
-                  <button  onClick={onImageChange} className=' bg-transparent border-0 '  > <FaExchangeAlt /></button>
-                   </div>
-                   </li>
-
-               {/* <li> */}
-                {/* <div className="" data-tip="Add to Wishlist"><FaRegHeart/></div></li> */}
-                    <li><div data-tip="Quick View"><AiOutlineSearch /></div></li>
-                    {/* <li><div data-tip="Add to Cart"><MdAddShoppingCart /></div></li> */}
-                </ul>
-                <div className="price btn btn-success">$20.00</div>
+                
             </div>
             <div className="product-content">
                 <h3 className="title"><div >{d.label}</div></h3>
