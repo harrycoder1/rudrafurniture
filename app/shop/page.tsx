@@ -86,13 +86,18 @@ allData.length>0 && category!=null && changeCate()
      
   return (
     <div className="container">
-<div className=" " style={{marginTop:"72px"}}>
-  <div className="">
-    <input className="text-dark me-2  h-text-sm h-form-input  " onChange={handleChangeText} name="searchText" type="search" placeholder="type here..."style={{fontSize:"12px" ,width:"100%"}} aria-label="Search" />  
+<div className=" " style={{marginTop:"80px"}}>
+  <div className=" h-flex">
+    <input className="text-dark me-2  h-text-sm h-p-form-input  " onChange={handleChangeText} name="searchText" type="search" placeholder="type here..."style={{fontSize:"12px" ,width:""}} aria-label="Search" />  
+    <button className="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+   Add Filters
+  </button>
  </div>
-<div className="h-flex" style={{flexWrap:"wrap"}}>
-  <button className='text-dark me-2  h-text-sm h-form-input ' onClick={handleReset}>All </button>
-  <select name="category" value={filtPara.category} onChange={handleChangeCategory} className='text-dark me-2  h-text-sm h-form-input' id="cars">
+ <div className="collapse" id="collapseExample">
+  <div className="card ">
+  <div className="h-flex" style={{flexWrap:"wrap"}}>
+  <button className='text-dark   h-text-sm h-p-form-input ' onClick={handleReset}>Remove Filter </button>
+  <select name="category" value={filtPara.category} onChange={handleChangeCategory} className='text-dark  h-text-sm h-p-form-input' id="cars">
   <option  value={""} className='text-center'>{"Select Category"}</option>
     
     {furnitureData.map((itm , i)=>(
@@ -101,10 +106,15 @@ allData.length>0 && category!=null && changeCate()
     
     
   </select>
-
-  <input type="number" onChange={handleMinPrice} className="text-dark me-2  h-text-sm h-form-input  " value={filtPara.minPrice} name="minPrice"  placeholder="Minimum Price"style={{fontSize:"12px" ,width:"100px"}}  />  
-  <input type="number" onChange={handleMaxPrice} className="text-dark me-2  h-text-sm h-form-input  " value={filtPara.maxPrice} name="maxPrice"  placeholder="Maximum Price "style={{fontSize:"12px" ,width:"100px"}}  />  
+  <div className="h-flex" style={{flexWrap:"wrap"}} >
+<div className='text-center' style={{color: "gray"}}>Select Price Range</div>
+<div className="h-flex" style={{flexWrap:"wrap"}}>
+  <input type="number" onChange={handleMinPrice} className="text-dark me-2  h-text-sm h-p-form-input  " value={filtPara.minPrice} name="minPrice"  placeholder="Minimum Price"style={{fontSize:"12px" ,width:"100px"}}  />  
+  <input type="number" onChange={handleMaxPrice} className="text-dark me-2  h-text-sm h-p-form-input  " value={filtPara.maxPrice} name="maxPrice"  placeholder="Maximum Price "style={{fontSize:"12px" ,width:"100px"}}  />  </div></div>
   </div>
+  </div>
+</div>
+
 </div>
 
      {allData?.length >0 ?    <div className='h-flex  h-resp-box ' style={{flexWrap:"wrap"  , alignItems:"start"}}>
