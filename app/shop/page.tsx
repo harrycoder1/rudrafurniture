@@ -89,11 +89,11 @@ allData.length>0 && category!=null && changeCate()
 <div className=" " style={{marginTop:"80px"}}>
   <div className=" h-flex">
     <input className="text-dark me-2  h-text-sm h-p-form-input  " onChange={handleChangeText} name="searchText" type="search" placeholder="type here..."style={{fontSize:"12px" ,width:""}} aria-label="Search" />  
-    <button className="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    <button className="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample12">
    Add Filters
   </button>
  </div>
- <div className="collapse" id="collapseExample">
+ <div className="collapse" id="collapseExample12">
   <div className="card ">
   <div className="h-flex" style={{flexWrap:"wrap"}}>
   <button className='text-dark   h-text-sm h-p-form-input ' onClick={handleReset}>Remove Filter </button>
