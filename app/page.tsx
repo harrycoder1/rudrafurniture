@@ -1,3 +1,4 @@
+// "use client"
 // import { Header } from '@/components'
 // import Image from 'next/image'
 import { Catagory, Contact, FAQ, Footer, SlideOffer, Slider, SliderOfferPage } from "@/components"

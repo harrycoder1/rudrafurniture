@@ -5,8 +5,11 @@ import './globals.css'
 // import '@/styles/mediaScreen.css'
 // import '@/styles/contact.css'd
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import 'bootstrap/dist/js/bootstrap';
+// import 'bootstrap/js/src/button'
+
+// import 'bootstrap/dist/js/bootstrap.bundle';
 import { Footer, Nav } from '@/components';
+import BootStrapImport from '@/components/BootStrapImport.jsx';
 // const inter = Inter({ subsets: ['latin'] })
 const michroma = Michroma({weight:'400'  ,subsets:['latin', 'latin-ext' ] })
 
@@ -47,14 +50,16 @@ export default function RootLayout({
     {/* <title>Hello, world!</title> */}
   </head>
       <body className={``}  style={{height:"auto" ,backgroundColor:"e2e3e5"}}>
+<BootStrapImport />
+
       <Nav />
+      
 
 <div className="  ">
 {children}
 
 <Footer />
 </div>
-
 {/* <Script
         src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -69,8 +74,9 @@ export default function RootLayout({
       /> */}
 {/* <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script> */}
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"  ></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" ></script>
+
+{/* <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"  ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" ></script> */}
         {/* <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.jss"></script> */}
         </body>
     </html>
