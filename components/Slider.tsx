@@ -19,14 +19,21 @@ export default function Slider() {
   
   const sataicData = ["/img1.jpg" , "/img2.jpg" ,"/img3.jpg"]
   const [currIndex ,setCurrIndex] = useState(0)
+  const [isLeft , setIsLeft] = useState<Boolean>(true)
   const prevIndex = () =>{
-    let curr = currIndex <=0 ? currIndex -1 : slider.length -1
-    setSlider(curr)
+    let curr =Math.abs( (currIndex-1) % slider.length)
+    console.log(curr)
+setCurrIndex(curr)
+setIsLeft(false)
+    // setSlider(curr)
   }
   
   const nextIndex = () =>{
-    let curr = currIndex == slider.length -1 ? 0 : currIndex+1
-    setSlider(curr)
+    let curr = (currIndex+1 )% slider.length
+    console.log(curr)
+setCurrIndex(curr)
+setIsLeft(true)
+    // setSlider(curr)
   }
 
 
@@ -41,7 +48,7 @@ export default function Slider() {
 
       {sataicData.length >0 && sataicData?.map((d:any , i:any)=>(
  <div key={i} className={`carousel-item  h-flex hres `} >
- <Image fill src={d} className="d-block w-100   "  style={{width:"100%" ,  }}alt="..." />
+ <Image fill src={d} className="d-block w-100   "  style={{width:"100%" ,  }} alt="..." />
  {/* <img  /> */}
 </div>
       ))}
@@ -64,40 +71,37 @@ export default function Slider() {
 :
 // for small screen
 <div className="myslider " >
-{/* <div id="carouselExampleControls" className="carousel d-block d-md-none  slide w-100 h-100  hres"  data-bs-ride="carousel">
-    <div className="carousel-inner" style={{width:"100%"}}>
-
+<div id="carouselExampleControls" className="carousel slide-small  slide w-100 h-100  hres"  data-bs-ride="carousel">
+<div>
       {slider.length >0 && slider?.map((d:any , i:any)=>(
- <div key={i} className={`carousel-item    h-flex hres `} >
- <Image fill src={d.imgsmall} className="d-block w-100   "  style={{width:"100%" ,  }}alt="..." />
-
+        currIndex === i &&
+ <div key={i} className={`  h-flex hres ${isLeft ?"slide-in-left" :"slide-in-right"}`} >
+ <Image fill src={slider[currIndex].imgsmall} className="d-block w-100   "  style={{width:"100%" ,  }}alt="..." />
+ {/* <img  /> */}
 </div>
       ))}
      
 
       
     </div>
-    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <button onClick={prevIndex} className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
       <span className="carousel-control-prev-icon" aria-hidden="true"></span>
       <span className="visually-hidden">Previous</span>
     </button>
-    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <button onClick={nextIndex} className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
       <span className="carousel-control-next-icon" aria-hidden="true"></span>
-      <span className="visually-hidden">Next </span>
+      <span className="visually-hidden">Next</span>
     </button>
-  </div> */}
+  </div>
 
 
   {/* for large screen */}
-  <div id="carouselExampleControls1" className="carousel d-none d-md-block slide w-100 h-100  hres"  data-bs-ride="carousel">
-    <div className="carousel-inner" style={{width:"100%"}}>
-    <div className={`carousel-item  active  h-flex hres `} >
- <Image fill src={'/img2.jpg'} className="d-block w-100   "  style={{width:"100%" ,  }}alt="..." />
- {/* <img  /> */}
-</div>
+  <div id="carouselExampleControls1" className=" w-100 h-100  slide-large  hres"  data-bs-ride="carousel">
+   <div>
       {slider.length >0 && slider?.map((d:any , i:any)=>(
- <div key={i} className={`carousel-item   h-flex hres `} >
- <Image fill src={d.img} className="d-block w-100   "  style={{width:"100%" ,  }}alt="..." />
+        currIndex === i &&
+ <div key={i} className={`  h-flex hres ${isLeft ?"slide-in-left" :"slide-in-right"}`} >
+ <Image fill src={slider[currIndex].img} className="d-block w-100   "  style={{width:"100%" ,  }}alt="..." />
  {/* <img  /> */}
 </div>
       ))}
@@ -105,11 +109,11 @@ export default function Slider() {
 
       
     </div>
-    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
+    <button onClick={prevIndex} className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
       <span className="carousel-control-prev-icon" aria-hidden="true"></span>
       <span className="visually-hidden">Previous</span>
     </button>
-    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
+    <button onClick={nextIndex} className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
       <span className="carousel-control-next-icon" aria-hidden="true"></span>
       <span className="visually-hidden">Next</span>
     </button>
