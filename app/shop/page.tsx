@@ -92,6 +92,8 @@ allData.length>0 && category!=null && changeCate()
     <button className="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample12" aria-expanded="false" aria-controls="collapseExample12">
    Add Filters
   </button>
+
+
  </div>
  <div className="collapse" id="collapseExample12">
   <div className="card ">
