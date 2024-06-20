@@ -31,6 +31,7 @@ export default function Nav() {
               <Link className=" michroma nav-item text-gr nav-item  h-navehover"   href={'/shop'}><div data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">Shop</div></Link>
 
               <Link className="my-2 michroma nav-item text-gr   h-navehover"   href={'/#Collections'}> <div data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">Collections</div></Link>
+              <Link className="my-2 michroma nav-item text-gr   h-navehover"   href={'/about'}> <div data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">About US</div></Link>
               <Link className="my-2 michroma nav-item text-gr   h-navehover"   href={'/#Contact'}> <div data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">Contact US</div></Link>
              
               {/* <li className="my-2 outline-none border-0 michroma text-gr  " style={{cursor:"pointer"}} data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"  >Catagories</li> */}
@@ -74,6 +75,7 @@ export default function Nav() {
               <Link className="mx-3 michroma text-gr h-navehover "   href={'/shop'}>Shop</Link>
               {/* <button className="mx-3 outline-none border-0 michroma text-gr  " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"  >Catagories</button> */}
               <Link className="mx-3 michroma text-gr h-navehover "  href={'/#Collections'}> Collections</Link>
+              <Link className="my-2 michroma nav-item text-gr   h-navehover"   href={'/about'}> <div data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">About US</div></Link>
               <Link className="mx-3 michroma text-gr h-navehover "  href={'/#Contact'}>Contact US</Link>
               <Link className="mx-3 michroma text-gr h-navehover "  href={'/#FAQ'}>FAQ</Link>
 
