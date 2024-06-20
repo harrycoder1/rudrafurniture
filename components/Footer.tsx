@@ -22,7 +22,7 @@ export default function Footer() {
   ]
   return (
     
-    <div><footer className="text-center text-lg-start bg-body-tertiary text-muted">
+    <div><footer className="text-center text-lg-start text-muted" style={{background:"#fecbcb40;"}}>
   <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
     
     <div className="me-5 d-none d-lg-block">
@@ -67,18 +67,19 @@ export default function Footer() {
 
         <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
           <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
-          <p><i className="fas fa-home me-3"><FaHome /></i> Nagpur , Maharastra </p>
+          <p><i className="fas fa-home me-3"><FaHome /></i> Wathoda layout , Shreeram nagar  , Nagpur-440035 , Maharashtra</p>
           <p>
             <i className="fas fa-envelope me-3"> <BiLogoGmail /></i>
-           rudra21213@gmail.com
+           rudrafurniture29@gmail.com
           </p>
-          <p><i className="fas fa-phone me-3"> <CiPhone /></i> 432325454543</p>
+          <p><i className="fas fa-phone me-3"> <CiPhone /></i>91+ 9146515502</p>
+          <p><i className="fas fa-phone me-3"> <CiPhone /></i>91+ 9579023680</p>
         </div>
       </div>
     </div>
   </section>
 
-  <div className="text-center p-4" style={{backgroundColor: "rgba(0, 0, 0, 0.05)"}}>
+  <div className="text-center p-4 bg-dark text-white" style={{backgroundColor: "rgba(0, 0, 0, 0.05)"}}>
   © 2024 Rudra Furniture. All rights reserved.
   </div>
 </footer>

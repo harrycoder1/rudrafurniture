@@ -23,15 +23,15 @@ export default function Slider({slideData}:{slideData:any}) {
     fetData()
     }, [])
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrIndex(prevIndex => (prevIndex + 1) % slider.length);
-    }, 4000);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setCurrIndex(prevIndex => (prevIndex + 1) % slider.length);
+  //   }, 4000);
 
 
 
-    return () => clearInterval(interval);
-  }, [slider.length]);
+  //   return () => clearInterval(interval);
+  // }, [slider.length]);
 
 
   const prevIndex = () =>{
@@ -70,10 +70,10 @@ setIsLeft(false)
 <div className="myslider " >
 <div id="carouselExampleControls3" className="  w-100 h-100  hres"  data-bs-ride="carousel">
     <div className="" style={{width:"100%"}}>
-    {sataticData.length >0 && sataticData?.map((d:any , i:any)=>(
+    {sataticData.map((d:any , i:any)=>(
         currIndex === i &&
  <div key={i} className={`  h-flex hres ${isLeft ?"slide-in-left" :"slide-in-right"}`} >
- <Image fill src={sataticData[staticIndex]} className="d-block w-100   "  style={{width:"100%" ,  }}alt="..." />
+ <Image fill src={sataticData[staticIndex]} className="d-block w-100   "  style={{width:"100%" ,  }}alt={d} />
  {/* <img  /> */}
 </div>
       ))}
@@ -102,7 +102,7 @@ setIsLeft(false)
       {slider.length >0 && slider?.map((d:any , i:any)=>(
         currIndex === i &&
  <div key={i} className={`  h-flex hres ${isLeft ?"slide-in-left" :"slide-in-right"}`} >
- <Image fill src={slider[currIndex].imgsmall} className="d-block w-100   "  style={{width:"100%" ,  }}alt="..." />
+ <Image fill src={slider[currIndex].imgsmall} className="d-block w-100   "  style={{width:"100%" ,  }}alt={`${d.title}`} />
  {/* <img  /> */}
 </div>
       ))}
@@ -127,7 +127,7 @@ setIsLeft(false)
       {slider.length >0 && slider?.map((d:any , i:any)=>(
         currIndex === i &&
  <div key={i} className={`  h-flex hres ${isLeft ?"slide-in-left" :"slide-in-right"}`} >
- <Image fill src={slider[currIndex].img} className="d-block w-100   "  style={{width:"100%" ,  }}alt="..." />
+ <Image fill src={slider[currIndex].img} className="d-block w-100   "  style={{width:"100%" ,  }}alt={`${d.title}`}/>
  {/* <img  /> */}
 </div>
       ))}

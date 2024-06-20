@@ -5,12 +5,14 @@ import { Catagory, Contact, FAQ, Footer, SlideOffer, Slider, SliderOfferPage } f
 import SliderPage from "@/components/SliderPage"
 export default function Home() {
   return (
-    <main className="">
+    <main  >
      
 <SliderPage />
 <div className="container " >
   <SliderOfferPage />
-<Catagory />
+  
+  <div className="" id='Collections'><Catagory /></div>
+
 <Contact />
 <FAQ />
 

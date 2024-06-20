@@ -119,6 +119,9 @@ background: linear-gradient(to top, #FF975C 0%, #F72103 100%);
 /* text-decoration: none; */
 list-style: none;
   }
+  .h-navehover:hover{
+    border-bottom:2px solid #f66c2d; ;
+  }
   .h-hover-red:hover{
     color: var(--dark);
   }
@@ -1041,6 +1044,12 @@ display: block;
 justify-content:start;
 
   }
+  .h-shopbtn {
+    background-color: green;
+    font-size: 16px;
+    padding: 8px 6px ;
+    border-radius: 8px ;
+   }
 }
 @media only screen and (min-width:760px) {
   .slide-large{
@@ -1052,8 +1061,15 @@ justify-content:start;
    .h-shopbtn{
     font-size: 10px;
    }
+   .h-shopbtn {
+    background-color: green;
+    font-size: 20px;
+    padding: 12px 8px ;
+    border-radius: 10px ;
+   }
 
  }
+ 
 
  .h-p-form-input{
   min-width: 130px;
