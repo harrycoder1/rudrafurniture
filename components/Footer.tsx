@@ -57,8 +57,8 @@ export default function Footer() {
             Links
           </h6>
           {footerLinks.map((d,i )=>(
-            <p>
-            <Link key={i} href={`${d.link}`} className="text-reset">{d.name}</Link>
+            <p key={i}>
+            <Link  href={`${d.link}`} className="text-reset">{d.name}</Link>
           </p>
           ))}
         </div>
