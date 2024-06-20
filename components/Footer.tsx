@@ -11,14 +11,14 @@ export default function Footer() {
   const footerLinks = [
     {name:"Home" , link:"/"},
     {name:"Shop" , link:"/shop"},
-    {name:"About" , link:"/"},
+    {name:"About" , link:"/about"},
     {name:"Contact" , link:"/#contact"},
     {name:"Collections" , link:"/#collections"},
   ]
   const social = [
-    {logo:<IoLogoYoutube /> , link:"/"},
-    {logo:<FaInstagram /> , link:"/"},
-    {logo:<FaFacebook /> , link:"/"}
+    {logo:<IoLogoYoutube /> , link:"https://youtube.com/@rudra_furniture29?si=Q2HjLZ1jArXNliDB"},
+    {logo:<FaInstagram /> , link:"https://www.instagram.com/rudra_furniture291?igsh=MWhzM25scmVqdW44bg=="},
+    {logo:<FaFacebook /> , link:"https://www.facebook.com/profile.php?id=61561349965114&mibextid=ZbWKwL"}
   ]
   return (
     
