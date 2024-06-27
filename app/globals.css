@@ -120,7 +120,8 @@ background: linear-gradient(to top, #FF975C 0%, #F72103 100%);
 list-style: none;
   }
   .h-navehover:hover{
-    border-bottom:2px solid #f66c2d; ;
+    border-bottom:2px solid #f66c2d; 
+    font-size: 12px;
   }
   .h-hover-red:hover{
     color: var(--dark);
@@ -152,6 +153,7 @@ list-style: none;
   .h-card{
     height: 100vw;
   }
+  
   
 }
 /* .h-card-img{ */
