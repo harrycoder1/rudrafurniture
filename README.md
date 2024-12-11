@@ -9,6 +9,28 @@ A responsive furniture showcase website developed using **HTML**, **CSS**, **Boo
 - FAQ section for common questions
 - Mobile responsive and user-friendly design
 
+## Pages
+
+### Landing Page
+![Landing Page](images/home.png)
+
+### Collections Page
+![Collections Page](images/collections.png)
+
+### Shop Page (Desktop)
+![Shop Page Desktop](images/shopepage.png)
+
+### Shop Page (Mobile)
+<div style="display: flex; justify-content: space-between;">
+  <img src="images/shopeM.png" alt="Shop Page Mobile" style="width: 45%; height: auto;">
+  <img src="images/productM.png" alt="Product View Page Mobile" style="width: 45%; height: auto;">
+</div>
+
+### Product View Page (Desktop)
+![Product View Page Desktop](images/productView.png)
+
+
+
 ## Technologies Used
 
 - **HTML**
@@ -24,26 +46,3 @@ A responsive furniture showcase website developed using **HTML**, **CSS**, **Boo
    ```bash
    git clone https://github.com/harrycoder1/rudrafurniture.git
    cd rudrafurniture
-   ```
-
-2. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-
-3. Run the development server:
-
-   ```bash
-   npm run dev
-   ```
-
-4. Visit the website in your browser at `http://localhost:3000`.
-
-## Contributing
-
-Feel free to fork the repository and contribute by submitting issues or pull requests.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
