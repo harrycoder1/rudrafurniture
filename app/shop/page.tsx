@@ -6,6 +6,7 @@ import { apiDataStatic, furnitureData } from '@/staticData'
 import Image from 'next/image';
 import React ,{useEffect , useState} from 'react'
 import { useSearchParams } from "next/navigation";
+import { SiteUrl2 } from "@/util/url"
 
 export default function Shop() {
   const [allData ,setAllData] =useState<any>([])
@@ -13,7 +14,7 @@ export default function Shop() {
   useEffect(() => {
 
     const fetchFunc = async()=>{
-     const res  = await fetch('https://r9211dra9211.vercel.app/api/product')
+     const res  = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/product`)
      const data =await res.json()
      setAllData(data.data)
      setFilterData(data.data)

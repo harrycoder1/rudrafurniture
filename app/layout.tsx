@@ -14,8 +14,22 @@ import BootStrapImport from '@/components/BootStrapImport.jsx';
 const michroma = Michroma({weight:'400'  ,subsets:['latin', 'latin-ext' ] })
 
 export const metadata: Metadata = {
-  title: 'Rudra Furniture',
-  description: '',
+  title: 'Rudra Furniture - Premium Furniture for Every Home',
+  description: 'Explore a wide range of premium furniture collections at Rudra Furniture. Shop for living room, bedroom, kitchen, and office furniture with ease. Quality and style await you.',
+  openGraph: {
+    title: 'Rudra Furniture',
+    description: 'Shop for stylish and functional furniture at Rudra Furniture. Browse living room, bedroom, and office furniture collections.',
+    url: 'https://rudrafurniture.vercel.app/',
+    type: 'website',
+    // image: '/images/og-image.png', // Add an appropriate image for the open graph
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@rudrafurniture',
+    title: 'Rudra Furniture',
+    description: 'Premium furniture for every room in your home. Discover the best furniture collections today!',
+    // image: '/images/twitter-image.png', // Add an appropriate image for Twitter card
+  },
 }
 
 
@@ -47,7 +61,7 @@ export default function RootLayout({
     {/* <!-- Bootstrap CSS --> */}
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" />
 
-    {/* <title>Hello, world!</title> */}
+
   </head>
       <body className={``}  style={{height:"auto" ,backgroundColor:"e2e3e5"}}>
 <BootStrapImport />
@@ -60,24 +74,7 @@ export default function RootLayout({
 
 <Footer />
 </div>
-{/* <Script
-        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossOrigin="anonymous"
-        strategy="beforeInteractive"
-      />
-      <Script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossOrigin="anonymous"
-        strategy="beforeInteractive"
-      /> */}
-{/* <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script> */}
 
-{/* <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"  ></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" ></script> */}
-        {/* <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.jss"></script> */}
         </body>
     </html>
   )

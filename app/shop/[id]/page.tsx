@@ -4,13 +4,13 @@ import { productDataType } from '@/types'
 import Image from 'next/image'
 import React ,{useEffect, useState} from 'react'
 import { FaRupeeSign } from 'react-icons/fa'
-
+import { SiteUrl2 } from '@/util/url'
 export default function ProductByID({ params }: { params: { id: string } }) {
     const [data ,setData] = useState<productDataType | any>({})
     
     useEffect(() => {
         const fetchFunc = async()=>{
-         const res  = await fetch(`https://r9211dra9211.vercel.app/api/product/${params.id}`)
+         const res  = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/product/${params.id}`)
          const data =await res.json()
          setData(data.data)
          console.log(data.data)
